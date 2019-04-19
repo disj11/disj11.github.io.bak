@@ -11,7 +11,7 @@
 
 
 
-    <title>Life Log</title>
+    <title>Saturday - Life Log</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,19 +36,19 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="Record my life" />
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="/" />
+    <link rel="canonical" href="/author/saturday/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Life Log" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Life Log" />
+    <meta property="og:title" content="Saturday - Life Log" />
     <meta property="og:description" content="Record my life" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="/author/saturday/" />
     <meta property="og:image" content="/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Life Log" />
+    <meta name="twitter:title" content="Saturday - Life Log" />
     <meta name="twitter:description" content="Record my life" />
     <meta name="twitter:url" content="/" />
     <meta name="twitter:image" content="/assets/images/blog-cover.jpg" />
@@ -68,7 +68,7 @@
         "name": "Life Log",
         "logo": "/"
     },
-    "url": "/",
+    "url": "/author/saturday/",
     "image": {
         "@type": "ImageObject",
         "url": "/assets/images/blog-cover.jpg",
@@ -77,7 +77,7 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/"
+        "@id": "/author/saturday/"
     },
     "description": "Record my life"
 }
@@ -92,31 +92,29 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Life Log" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Author Page" href="/feed.xml" />
 
 
 </head>
-<body class="home-template">
+<body class="author-template">
 
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- < default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
+        <!-- < default}} -->
+<!-- The tag above means - insert everything in this file into the {body} of the default.hbs template -->
 
-<!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer " style="background-image:  url(/assets/images/blog-cover.jpg) ">
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                
-                    Life Log
-                
-            </h1>
-            <h2 class="site-description">Record my life</h2>
-        </div>
-        <nav class="site-nav">
+<!-- #author  -->
+<!-- Everything inside the #author tags pulls data from the author -->
+
+    
+    <header class="site-header outer no-cover">
+        <div class="inner">
+            <nav class="site-nav">
     <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="/">Life Log</a>
+            
         
         
             <ul class="nav" role="menu">
@@ -139,8 +137,34 @@ into the {body} of the default.hbs template -->
     </div>
 </nav>
 
-    </div>
-</header>
+            <div class="site-header-content">
+                
+                    <img class="author-profile-image" src="/assets/images/ghost.png" alt="saturday" />
+                
+                <h1 class="site-title">Saturday</h1>
+                
+                    <h2 class="author-bio">인생 흘러가는대로</h2>
+                
+                <div class="author-meta">
+                    
+                    <div class="author-stats">
+                        3 posts <span class="bull">&bull;</span>
+                    </div>
+                    
+                        <a class="social-link social-link-wb" href="https://disj11.github.io" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.5 11.957c0 6.375-5.163 11.544-11.532 11.544C5.599 23.5.5 18.125.5 11.75.5 5.542 5.37.758 11.505.511l.5-.011C18.374.5 23.5 5.582 23.5 11.957zM11.505.511c-6 6.5-6 14.98 0 22.98m1-22.98c6 6.5 6 14.977 0 22.977M2 17.479h20.063m-19.657-12h19.062m-20.968 6h22.938" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/></svg>
+</a>
+                    
+                    
+                    
+                    <a class="social-link social-link-rss" href="https://feedly.com/i/subscription/feed//author/saturday/feed.xml" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+<!-- /author -->
 
 <!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
@@ -151,7 +175,7 @@ into the {body} of the default.hbs template -->
             
 
 
-    <article class="post-card home-template no-image">
+    <article class="post-card author-template no-image">
         
         <div class="post-card-content">
             <a class="post-card-content-link" href="/server-sent-events">
@@ -197,7 +221,7 @@ into the {body} of the default.hbs template -->
         </div>
     </article>
 
-    <article class="post-card home-template no-image">
+    <article class="post-card author-template no-image">
         
         <div class="post-card-content">
             <a class="post-card-content-link" href="/baekjoon-14501">
@@ -248,7 +272,7 @@ into the {body} of the default.hbs template -->
         </div>
     </article>
 
-    <article class="post-card home-template">
+    <article class="post-card author-template">
         
             <a class="post-card-image-link" href="/welcome">
                 <div class="post-card-image" style="background-image: url(/assets/images/writing.jpg)"></div>
