@@ -9,8 +9,8 @@ words_per_minute: 200
 baseurl: /
 
 # Website info
-title: Ghost
-description: The professional publishing platform
+title: Life Log
+description: Record my life
 cover: assets/images/blog-cover.jpg
 # logo: assets/images/blog-icon.png
 # logo_dark: assets/images/favicon.png
@@ -51,7 +51,7 @@ feed:
 # Site logo in the index.html (as in demo.ghost.io)
 # Author's page cover in _layouts/author.html
 # The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
+# Post's page cover as a per-post basis posts/...
 # Disqus comments as a per-post basis
 # ...
 
