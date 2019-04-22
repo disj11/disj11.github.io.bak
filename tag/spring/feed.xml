@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-  <link href="/tag/spring/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="/" rel="alternate" type="text/html" />
-  <updated>2019-04-22T11:28:51+00:00</updated>
-  <id>/tag/spring/feed.xml</id>
+  <link href="https://disj11.github.io/tag/spring/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
+  <updated>2019-04-22T11:36:14+00:00</updated>
+  <id>https://disj11.github.io/tag/spring/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">SSE (Server-Sent Events)</title>
-      <link href="/server-sent-events" rel="alternate" type="text/html" title="SSE (Server-Sent Events)" />
+      <link href="https://disj11.github.io/server-sent-events" rel="alternate" type="text/html" title="SSE (Server-Sent Events)" />
       <published>2019-04-19T16:30:00+00:00</published>
       <updated>2019-04-19T16:30:00+00:00</updated>
-      <id>/server-sent-events</id>
-      <content type="html" xml:base="/server-sent-events">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+      <id>https://disj11.github.io/server-sent-events</id>
+      <content type="html" xml:base="https://disj11.github.io/server-sent-events">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;실시간으로 웹 애플리게이션 서버에서 클라이언트로 데이터를 전송하는 방법 중 하나이다.
 이러한 방법에는 WebSoket을 이용하는 방법도 있지만,

@@ -4,7 +4,7 @@
     <title> - Articles</title>
     <description>Record my life</description>
     <link>
-    </link>
+    https://disj11.github.io</link>
     
       
       <item>
@@ -22,8 +22,8 @@ SSE는 서버에서 클라이언트로 데이터를 전송하는 단방향 통�
         
         <pubDate>Fri, 19 Apr 2019 16:30:00 +0000</pubDate>
         <link>
-        /server-sent-events</link>
-        <guid isPermaLink="true">/server-sent-events</guid>
+        https://disj11.github.io/server-sent-events</link>
+        <guid isPermaLink="true">https://disj11.github.io/server-sent-events</guid>
       </item>
       
     
@@ -40,8 +40,8 @@ SSE는 서버에서 클라이언트로 데이터를 전송하는 단방향 통�
         
         <pubDate>Fri, 19 Apr 2019 15:40:00 +0000</pubDate>
         <link>
-        /baekjoon-14501</link>
-        <guid isPermaLink="true">/baekjoon-14501</guid>
+        https://disj11.github.io/baekjoon-14501</link>
+        <guid isPermaLink="true">https://disj11.github.io/baekjoon-14501</guid>
       </item>
       
     
@@ -55,8 +55,8 @@ SSE는 서버에서 클라이언트로 데이터를 전송하는 단방향 통�
         
         <pubDate>Fri, 19 Apr 2019 15:30:00 +0000</pubDate>
         <link>
-        /welcome</link>
-        <guid isPermaLink="true">/welcome</guid>
+        https://disj11.github.io/welcome</link>
+        <guid isPermaLink="true">https://disj11.github.io/welcome</guid>
       </item>
       
     

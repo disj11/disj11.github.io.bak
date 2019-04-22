@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-  <link href="/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="/" rel="alternate" type="text/html" />
-  <updated>2019-04-22T11:28:51+00:00</updated>
-  <id>/tag/algorithm/feed.xml</id>
+  <link href="https://disj11.github.io/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
+  <updated>2019-04-22T11:36:14+00:00</updated>
+  <id>https://disj11.github.io/tag/algorithm/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">백준 14501번 (퇴사)</title>
-      <link href="/baekjoon-14501" rel="alternate" type="text/html" title="백준 14501번 (퇴사)" />
+      <link href="https://disj11.github.io/baekjoon-14501" rel="alternate" type="text/html" title="백준 14501번 (퇴사)" />
       <published>2019-04-19T15:40:00+00:00</published>
       <updated>2019-04-19T15:40:00+00:00</updated>
-      <id>/baekjoon-14501</id>
-      <content type="html" xml:base="/baekjoon-14501">&lt;blockquote&gt;
+      <id>https://disj11.github.io/baekjoon-14501</id>
+      <content type="html" xml:base="https://disj11.github.io/baekjoon-14501">&lt;blockquote&gt;
   &lt;p&gt;DP (Dynamic Programing)을 활용한 알고리즘 문제를 풀어보았습니다.
 해당 문제가 궁금하다면 &lt;a href=&quot;https://www.acmicpc.net/problem/14501&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 방문하세요.&lt;/p&gt;
 &lt;/blockquote&gt;
