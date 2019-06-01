@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://disj11.github.io/tag/data-structure/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
+  <updated>2019-06-01T02:33:31+00:00</updated>
+  <id>https://disj11.github.io/tag/data-structure/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Life Log | </title>
+  
+
+  
+    <subtitle>Record my life</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Bit Masking (비트마스킹)</title>
+      <link href="https://disj11.github.io/bitmasking" rel="alternate" type="text/html" title="Bit Masking (비트마스킹)" />
+      <published>2019-06-01T10:47:00+00:00</published>
+      <updated>2019-06-01T10:47:00+00:00</updated>
+      <id>https://disj11.github.io/bitmasking</id>
+      <content type="html" xml:base="https://disj11.github.io/bitmasking">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;비트는 0, 1의 값을 가질 수 있는 데이터의 최소 단위이다.
+비트 마스크는 이러한 비트에 마스크를 씌워 비트의 값에 변화를 주는 행위이다.
+이 설명으로는 비트마스킹이 무엇인지 표현이 잘 안되는데, 아래에서 상세히 다뤄보자.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;and-연산&quot;&gt;AND 연산&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;AND 연산은 비트의 값과 마스크의 값이 모두 1일 때에는 1, 그 외의 경우는 0이 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;VALUE&lt;/td&gt;
+      &lt;td&gt;0000 0101&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;MASK&lt;/td&gt;
+      &lt;td&gt;0000 1111&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RESULT&lt;/td&gt;
+      &lt;td&gt;0000 0101&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;or-연산&quot;&gt;OR 연산&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;OR 연산은 비트의 값과 마스크의 값중 하나라도 1일 때에는 1, 모두 0일 때에는 0이 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;VALUE&lt;/td&gt;
+      &lt;td&gt;0000 0101&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;MASK&lt;/td&gt;
+      &lt;td&gt;0000 1111&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RESULT&lt;/td&gt;
+      &lt;td&gt;0000 1111&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;xor-연산&quot;&gt;XOR 연산&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;XOR 연산은 비트의 값과 마스크의 값이 값으면 0, 다르면 1이 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;자주-사용하는-연산&quot;&gt;자주 사용하는 연산&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;k번 비트가 1인지 0인지 확인 &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;status &amp;amp; (1 &amp;lt;&amp;lt; k)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;k번 비트를 1로 만들고 싶다. &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;status = status | (1 &amp;lt;&amp;lt; k)&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;status |= (1 &amp;lt;&amp;lt; k)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;k번 비트를 0으로 만들고 싶다. &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;status = status &amp;amp; ~(1&amp;lt;&amp;lt;k)&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;status &amp;amp;= ~(1&amp;lt;&amp;lt;k)&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;위의 내용을 모두 읽어도 1~3번 이해가 안 간다면,
+비트 NOT 연산, 비트 시프트 연산에 대하여 찾아보면 좋다.&lt;/p&gt;
+
+&lt;h3 id=&quot;참고&quot;&gt;참고&lt;/h3&gt;
+&lt;p&gt;JAVA의 경우는 EnumSet이라고 하는 데이터 타입을 제공하여,
+특별한 경우가 아니라면 비트 연산을 사용하는 경우가 드물다.
+EnumSet의 자세한 정보가 궁금하다면, &lt;a href=&quot;https://www.baeldung.com/java-enumset&quot;&gt;https://www.baeldung.com/java-enumset&lt;/a&gt;
+사이트를 참고하면 된다.&lt;/p&gt;
+
+&lt;p&gt;[참고 사이트] &lt;br /&gt;
+&lt;a href=&quot;https://kks227.blog.me/&quot; target=&quot;_blank&quot;&gt;https://kks227.blog.me/&lt;/a&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Saturday</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Data Structure" />
+      
+
+      
+        <summary type="html">소개 비트는 0, 1의 값을 가질 수 있는 데이터의 최소 단위이다. 비트 마스크는 이러한 비트에 마스크를 씌워 비트의 값에 변화를 주는 행위이다. 이 설명으로는 비트마스킹이 무엇인지 표현이 잘 안되는데, 아래에서 상세히 다뤄보자.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
