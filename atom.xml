@@ -8,6 +8,24 @@
     
       
       <item>
+        <title>백준 1327번 (소트 게임)</title>
+        
+          <description>&lt;blockquote&gt;
+  &lt;p&gt;BSF(Breadth First Search : 너비 우선 탐색)를 활용한 알고리즘 문제를 풀어보았습니다.
+해당 문제가 궁금하다면 &lt;a href=&quot;https://www.acmicpc.net/problem/1327&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 방문하세요.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        
+        <pubDate>Sun, 02 Jun 2019 01:00:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/baekjoon-1327</link>
+        <guid isPermaLink="true">https://disj11.github.io/baekjoon-1327</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Bit Masking (비트마스킹)</title>
         
           <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
@@ -71,7 +89,7 @@ SSE는 서버에서 클라이언트로 데이터를 전송하는 단방향 통�
         <title>백준 14501번 (퇴사)</title>
         
           <description>&lt;blockquote&gt;
-  &lt;p&gt;DP (Dynamic Programing)을 활용한 알고리즘 문제를 풀어보았습니다.
+  &lt;p&gt;DP (Dynamic Programing : 동적 프로그래밍)을 활용한 알고리즘 문제를 풀어보았습니다.
 해당 문제가 궁금하다면 &lt;a href=&quot;https://www.acmicpc.net/problem/14501&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 방문하세요.&lt;/p&gt;
 &lt;/blockquote&gt;
 
