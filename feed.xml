@@ -1,4 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-06-05T13:41:27+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">백준 1327번 (소트 게임)</title><link href="https://disj11.github.io/baekjoon-1327" rel="alternate" type="text/html" title="백준 1327번 (소트 게임)" /><published>2019-06-02T01:00:00+00:00</published><updated>2019-06-02T01:00:00+00:00</updated><id>https://disj11.github.io/baekjoon-1327</id><content type="html" xml:base="https://disj11.github.io/baekjoon-1327">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-06-05T16:10:21+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Union-Find (유니온 파인드)</title><link href="https://disj11.github.io/union-find" rel="alternate" type="text/html" title="Union-Find (유니온 파인드)" /><published>2019-06-05T23:00:00+00:00</published><updated>2019-06-05T23:00:00+00:00</updated><id>https://disj11.github.io/union-find</id><content type="html" xml:base="https://disj11.github.io/union-find">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;유니온 파인드는 Disjoint Set (서로소 집합) 또는 Merge Find Set (병렬 찾기 집합) 으로 불리며,
+말 그대로 서로소인 집합들을 표현하는 자료구조이다.
+즉, 어떤 집합 사이에도 교집합의 원소가 하나도 없고, 모든 집합의 합집합은 전체 집합과 같다는 말이다.
+기본적으로 union, find 단 2개의 연산만을 지원한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;예시&quot;&gt;예시&lt;/h3&gt;
+&lt;p&gt;{1}, {2}, {3}, {4}, {5}, {6}, {7}, {8} &lt;br /&gt;
+위 집합들은 아무런 연산이 가해지지 않은 제일 초기의 크기 8인 유니온 파인드이고,
+포함하고 있는 집합 또한 8개 이다.&lt;/p&gt;
+
+&lt;p&gt;몇 번의 연산이 이루어 진 후 {1, 2, 5, 6, 8}, {3, 4}, {7} 의 형태가 되었다. &lt;br /&gt;
+아래의 그림은 변경 후 상태를 나타내는 포레스트이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/union-find-forest.png&quot; alt=&quot;변경 후&quot; /&gt; &lt;br /&gt;
+가장 위에 있는 노드가 각 트리의 루트라고 한다면, 그 트리에 속한 정점들은 모두 같은 집합에 속해있다.
+같은 집합이더라도 표현할 수 있는 방법은 수 없이 많으며, 위 그림은 그 중 한가지를 표현해 놓은 것이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;구현&quot;&gt;구현&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;find 연산&lt;/code&gt; 두 원소가 같은 집합에 속해 있는지 확인하려면, 두 원소의 루트를 찾아 루트가 서로 같은지 비교하면 된다.
+그러기 위해서 필요한 연산이 &lt;strong&gt;find&lt;/strong&gt; 연산으로, 어떤 정점의 루트를 찾아주는 역할을 한다.
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
+* 원소 n을 받아 n의 root노드를 반환
+* @param n 루트를 찾을 정점
+* @return root 노드
+*/&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;find&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;자신의 부모를 가리키는 배열이 parent 이고, 루트의 값은 -1 이라고 가정하여 짜본 코드인데,
+이 코드의 한 가지 문제점이 있다. find(6)을 수행한다면, 6부터 2까지의 경로가 일직선이기 때문에,
+많은 재귀 호출이 이루어진다는 것이다. 한번 개선 해보자.&lt;/p&gt;
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;find&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;별로 바뀐 것이 없다. &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EC%9D%B4%EC%A0%9C%EC%9D%B4%EC%85%98&quot; target=&quot;_blank&quot;&gt;메모이제이션&lt;/a&gt;과 비슷한 아이디어인데,
+만약, 한 번 6의 루트가 2인걸 알았다면, 6을 떼어서 2의 아래로 이으면 된다.
+결국, 재귀 호출을 해가면서 6과 2 사이의 직선 경로에 있던 정점들 모두의 루트가 2 라는 걸 알았으니,
+그 모두를 2 바로 아래다 이어주면 된다. 그럼 아래와 같은 그림이 탄생.
+이렇게 바뀐 로직의 시간 복잡도는 선형 시간과 거의 동급으로 취급한다.
+(크기가 N인 유니온 파인드 구조에 M번 find 연산을 한다면, 최악의 시간 복잡도는 O(MN).)&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;정확히는 O(Mlog * N) 이지만 저 로그 스타라는 함수는 아크만 함수의 역함수로 매우 느리게 증가해서 O(M)으로 봐도 무방하다.
+&lt;img src=&quot;/assets/images/union-find-forest2.png&quot; alt=&quot;부모를 변경한 후&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;union 연산&lt;/code&gt; 두 집합을 하나로 합쳐주는 연산이다.
+Union-Find 자료구조의 연산은 알아본 바와 같이 find 연산, union 연산 두 가지 뿐이라서,
+한 번 합친 집합을 다시 분할하는 것은 굉장히 힘들지만, 보통 합치는 작업만 필요할 때 유용하다.
+그럼 union 연산을 구현해보자.
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;굉장히 구현이 간단하다. b의 루트의 부모를 a로 만들면 된다.
+함수명이 union 이 아니라 merge 인 이유는 C언어 공용체(union) 전용 키워드가 union 이기 때문에 사용하지 못하기 때문.
+union 연산의 시간 복잡도도 find 연산과 마찬가지로 O(M)으로 봐도 무방하다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;[참고 사이트] &lt;br /&gt;
+&lt;a href=&quot;https://kks227.blog.me/&quot; target=&quot;_blank&quot;&gt;https://kks227.blog.me/&lt;/a&gt;&lt;/p&gt;</content><author><name>Saturday</name></author><category term="Data Structure" /><summary type="html">소개 유니온 파인드는 Disjoint Set (서로소 집합) 또는 Merge Find Set (병렬 찾기 집합) 으로 불리며, 말 그대로 서로소인 집합들을 표현하는 자료구조이다. 즉, 어떤 집합 사이에도 교집합의 원소가 하나도 없고, 모든 집합의 합집합은 전체 집합과 같다는 말이다. 기본적으로 union, find 단 2개의 연산만을 지원한다.</summary></entry><entry><title type="html">백준 1327번 (소트 게임)</title><link href="https://disj11.github.io/baekjoon-1327" rel="alternate" type="text/html" title="백준 1327번 (소트 게임)" /><published>2019-06-02T01:00:00+00:00</published><updated>2019-06-02T01:00:00+00:00</updated><id>https://disj11.github.io/baekjoon-1327</id><content type="html" xml:base="https://disj11.github.io/baekjoon-1327">&lt;blockquote&gt;
   &lt;p&gt;BSF(Breadth First Search : 너비 우선 탐색)를 활용한 알고리즘 문제를 풀어보았습니다.
 해당 문제가 궁금하다면 &lt;a href=&quot;https://www.acmicpc.net/problem/1327&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 방문하세요.&lt;/p&gt;
 &lt;/blockquote&gt;
