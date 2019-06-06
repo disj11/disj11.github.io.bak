@@ -4,7 +4,7 @@ current: post
 navigation: True
 title: Union-Find (유니온 파인드)
 date: 2019-06-05 23:00
-tags: [Data Structure]
+tags: [Data Structure, Union-Find]
 class: post-template
 subclass: 'post'
 author: saturday
@@ -58,12 +58,12 @@ int find (int n) {
 ```
 별로 바뀐 것이 없다. [메모이제이션](https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EC%9D%B4%EC%A0%9C%EC%9D%B4%EC%85%98){:target="_blank"}과 비슷한 아이디어인데,
 만약, 한 번 6의 루트가 2인걸 알았다면, 6을 떼어서 2의 아래로 이으면 된다.
-결국, 재귀 호출을 해가면서 6과 2 사이의 직선 경로에 있던 정점들 모두의 루트가 2 라는 걸 알았으니,
-그 모두를 2 바로 아래다 이어주면 된다. 그럼 아래와 같은 그림이 탄생.
+결국, 재귀 호출을 해가면서 6과 2 사이의 직선 경로에 있던 정점들 모두를 2 바로 아래다 이어주면 된다.
+그럼 아래와 같은 그림이 탄생.
+![부모를 변경한 후](/assets/images/union-find-forest2.png)   
 이렇게 바뀐 로직의 시간 복잡도는 선형 시간과 거의 동급으로 취급한다.
 (크기가 N인 유니온 파인드 구조에 M번 find 연산을 한다면, 최악의 시간 복잡도는 O(MN).)
 * 정확히는 O(Mlog * N) 이지만 저 로그 스타라는 함수는 아크만 함수의 역함수로 매우 느리게 증가해서 O(M)으로 봐도 무방하다.
-![부모를 변경한 후](/assets/images/union-find-forest2.png)   
 2. `union 연산` 두 집합을 하나로 합쳐주는 연산이다.
 Union-Find 자료구조의 연산은 알아본 바와 같이 find 연산, union 연산 두 가지 뿐이라서,
 한 번 합친 집합을 다시 분할하는 것은 굉장히 힘들지만, 보통 합치는 작업만 필요할 때 유용하다.

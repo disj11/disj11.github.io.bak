@@ -4,7 +4,7 @@ current: post
 navigation: True
 title: Bit Masking (비트마스킹)
 date: 2019-06-01 10:47
-tags: [Data Structure]
+tags: [Data Structure, Bit Masking]
 class: post-template
 subclass: 'post'
 author: saturday
