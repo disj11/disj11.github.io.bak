@@ -87,7 +87,7 @@ public class Balances {
         }
 
         // 오른쪽 자식 탐색 (level + 1 번째 추를 선택하지 않을 경우)
-        if (ssum <= m && (ssum + rsum - w[level - 1]) >= m) {
+        if (ssum <= m && (ssum + rsum - w[level + 1]) >= m) {
             if (ssum == m) {
                 return true;
             } else if (level < n - 1 && test(level + 1, ssum, rsum - w[level + 1], w, n, m)) {
