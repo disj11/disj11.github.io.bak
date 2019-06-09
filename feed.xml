@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-06-08T13:19:13+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Backtracking (되추적 기법)</title><link href="https://disj11.github.io/backtracking" rel="alternate" type="text/html" title="Backtracking (되추적 기법)" /><published>2019-06-08T20:55:00+00:00</published><updated>2019-06-08T20:55:00+00:00</updated><id>https://disj11.github.io/backtracking</id><content type="html" xml:base="https://disj11.github.io/backtracking">&lt;h3 id=&quot;backtracking-되추적-기법&quot;&gt;Backtracking (되추적 기법)&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-06-09T02:21:54+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Backtracking (되추적 기법)</title><link href="https://disj11.github.io/backtracking" rel="alternate" type="text/html" title="Backtracking (되추적 기법)" /><published>2019-06-08T20:55:00+00:00</published><updated>2019-06-08T20:55:00+00:00</updated><id>https://disj11.github.io/backtracking</id><content type="html" xml:base="https://disj11.github.io/backtracking">&lt;h3 id=&quot;backtracking-되추적-기법&quot;&gt;Backtracking (되추적 기법)&lt;/h3&gt;
 &lt;p&gt;되추적 기법은 DFS (깊이 우선 탐색)를 이용하여 트리를 순회하며 해를 찾는다.
 이때에 중요한 것은, 자식 노드로 갈 땐 항상 해가 있을 수 있는지 없는지 확인을 해 본다는 것이다.
 확인한 결과 더 이상 탐색할 필요가 없다면 현재 방향으로는 나아가는 것을 멈추고, 다른 자식 노드로 방향을 바꾼다.
@@ -19,7 +19,7 @@ true
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;원리&quot;&gt;원리&lt;/h3&gt;
-&lt;p&gt;저울 문제의 상태 공간 트리를 먼저 표현 하기 위한 조건을 생각해보면, 아래 두 가지 조건을 생각 할 수 있다.&lt;/p&gt;
+&lt;p&gt;저울 문제의 상태 공간 트리를 표현 하기 위한 조건을 생각해보면, 아래 두 가지 조건을 생각 할 수 있다.&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;w(i) 번째 추를 선택하는 경우&lt;/li&gt;
   &lt;li&gt;w(i) 번째 추를 선택하지 않는 경우&lt;/li&gt;
@@ -88,7 +88,14 @@ true
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Saturday</name></author><category term="Algorithm" /><category term="Backtracking" /><summary type="html">Backtracking (되추적 기법) 되추적 기법은 DFS (깊이 우선 탐색)를 이용하여 트리를 순회하며 해를 찾는다. 이때에 중요한 것은, 자식 노드로 갈 땐 항상 해가 있을 수 있는지 없는지 확인을 해 본다는 것이다. 확인한 결과 더 이상 탐색할 필요가 없다면 현재 방향으로는 나아가는 것을 멈추고, 다른 자식 노드로 방향을 바꾼다. 아래의 문제를 통해 자세히 알아보자.</summary></entry><entry><title type="html">백준 1976 (여행 가자)</title><link href="https://disj11.github.io/baekjoon-1976" rel="alternate" type="text/html" title="백준 1976 (여행 가자)" /><published>2019-06-07T15:45:00+00:00</published><updated>2019-06-07T15:45:00+00:00</updated><id>https://disj11.github.io/baekjoon-1976</id><content type="html" xml:base="https://disj11.github.io/baekjoon-1976">&lt;blockquote&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;성능-분석&quot;&gt;성능 분석&lt;/h3&gt;
+&lt;p&gt;각 노드에서의 처리 시간은 상수이므로 시간 복잡도는 탐색하는 노드의 수에 비례한다.
+상태 공간 트리는 높이가 (n + 1)인 포화 이진 트리이므로 전체 노드의 수는 2&lt;sup&gt;n+1&lt;/sup&gt; - 1 이다.
+즉, 되추적이 발생하지 않는 최악의 경우 시간 복잡도는 O(2&lt;sup&gt;n&lt;/sup&gt;)이다.
+최악의 시간 복잡도는 지수 시간이지만, 대부분의 경우는 이 보다 빠른 시간 안에 종료된다.
+하지만 이를 보장하지는 못 한다.&lt;/p&gt;</content><author><name>Saturday</name></author><category term="Algorithm" /><category term="Backtracking" /><summary type="html">Backtracking (되추적 기법) 되추적 기법은 DFS (깊이 우선 탐색)를 이용하여 트리를 순회하며 해를 찾는다. 이때에 중요한 것은, 자식 노드로 갈 땐 항상 해가 있을 수 있는지 없는지 확인을 해 본다는 것이다. 확인한 결과 더 이상 탐색할 필요가 없다면 현재 방향으로는 나아가는 것을 멈추고, 다른 자식 노드로 방향을 바꾼다. 아래의 문제를 통해 자세히 알아보자.</summary></entry><entry><title type="html">백준 1976 (여행 가자)</title><link href="https://disj11.github.io/baekjoon-1976" rel="alternate" type="text/html" title="백준 1976 (여행 가자)" /><published>2019-06-07T15:45:00+00:00</published><updated>2019-06-07T15:45:00+00:00</updated><id>https://disj11.github.io/baekjoon-1976</id><content type="html" xml:base="https://disj11.github.io/baekjoon-1976">&lt;blockquote&gt;
   &lt;p&gt;Union-Find(유니온 파인드)를 활용한 알고리즘 문제를 풀어보았습니다.
 해당 문제가 궁금하다면 &lt;a href=&quot;https://www.acmicpc.net/problem/1976&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 방문하세요. &lt;br /&gt;
 유니온 파인드에 대한 내용이 궁금하다면? &lt;a href=&quot;https://disj11.github.io/union-find&quot; target=&quot;_blank&quot;&gt;이 포스트를 참고&lt;/a&gt;&lt;/p&gt;

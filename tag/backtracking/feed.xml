@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/tag/backtracking/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2019-06-08T13:19:13+00:00</updated>
+  <updated>2019-06-09T02:21:54+00:00</updated>
   <id>https://disj11.github.io/tag/backtracking/feed.xml</id>
 
   
@@ -58,7 +58,7 @@ true
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;원리&quot;&gt;원리&lt;/h3&gt;
-&lt;p&gt;저울 문제의 상태 공간 트리를 먼저 표현 하기 위한 조건을 생각해보면, 아래 두 가지 조건을 생각 할 수 있다.&lt;/p&gt;
+&lt;p&gt;저울 문제의 상태 공간 트리를 표현 하기 위한 조건을 생각해보면, 아래 두 가지 조건을 생각 할 수 있다.&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;w(i) 번째 추를 선택하는 경우&lt;/li&gt;
   &lt;li&gt;w(i) 번째 추를 선택하지 않는 경우&lt;/li&gt;
@@ -127,7 +127,14 @@ true
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;성능-분석&quot;&gt;성능 분석&lt;/h3&gt;
+&lt;p&gt;각 노드에서의 처리 시간은 상수이므로 시간 복잡도는 탐색하는 노드의 수에 비례한다.
+상태 공간 트리는 높이가 (n + 1)인 포화 이진 트리이므로 전체 노드의 수는 2&lt;sup&gt;n+1&lt;/sup&gt; - 1 이다.
+즉, 되추적이 발생하지 않는 최악의 경우 시간 복잡도는 O(2&lt;sup&gt;n&lt;/sup&gt;)이다.
+최악의 시간 복잡도는 지수 시간이지만, 대부분의 경우는 이 보다 빠른 시간 안에 종료된다.
+하지만 이를 보장하지는 못 한다.&lt;/p&gt;</content>
 
       
       
