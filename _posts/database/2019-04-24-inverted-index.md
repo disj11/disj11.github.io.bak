@@ -4,7 +4,7 @@ current: post
 navigation: True
 title: Inverted index (역색인)
 date: 2019-04-24 16:30
-tags: [Database, Search]
+tags: [Database]
 class: post-template
 subclass: 'post'
 author: saturday
