@@ -8,6 +8,24 @@
     
       
       <item>
+        <title>RBAC (Role Based Access Control - 역할 기반 접근 제어)</title>
+        
+          <description>&lt;h3 id=&quot;잡담&quot;&gt;잡담&lt;/h3&gt;
+&lt;p&gt;역할 기반 접근 제어를 사용할 일이 필요해 검색을 하던 중,
+&lt;a href=&quot;https://stackoverflow.com/questions/28157798/is-my-role-based-access-control-a-feasible-solution/28159647#28159647&quot;&gt;좋은 글&lt;/a&gt;을 찾아 포스팅을 하게 되었습니다.
+역할 기반 접근 제어의 설명보다는, 구현 방법에 대해 알아보기 위한 글입니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 15 Jun 2019 02:30:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/role-based-access-control</link>
+        <guid isPermaLink="true">https://disj11.github.io/role-based-access-control</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Backtracking (되추적 기법)</title>
         
           <description>&lt;h3 id=&quot;backtracking-되추적-기법&quot;&gt;Backtracking (되추적 기법)&lt;/h3&gt;
@@ -159,19 +177,6 @@ SSE는 서버에서 클라이언트로 데이터를 전송하는 단방향 통�
         <link>
         https://disj11.github.io/server-sent-events</link>
         <guid isPermaLink="true">https://disj11.github.io/server-sent-events</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title></title>
-        
-          <description></description>
-        
-        <pubDate></pubDate>
-        <link>
-        https://disj11.github.io/2019-06-15-role-based-access-control</link>
-        <guid isPermaLink="true">https://disj11.github.io/2019-06-15-role-based-access-control</guid>
       </item>
       
     

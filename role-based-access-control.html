@@ -11,7 +11,7 @@
 
 
 
-    <title>백준 1717번 (집합의 표현)</title>
+    <title>RBAC (Role Based Access Control - 역할 기반 접근 제어)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,30 +36,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="Record my life" />
     <link rel="shortcut icon" href="https://disj11.github.io/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://disj11.github.io/baekjoon-1717" />
+    <link rel="canonical" href="https://disj11.github.io/role-based-access-control" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Life Log" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="백준 1717번 (집합의 표현)" />
-    <meta property="og:description" content="Union-Find(유니온 파인드)를 활용한 알고리즘 문제를 풀어보았습니다. 해당 문제가 궁금하다면 여기를 방문하세요. 유니온 파인드에 대한 내용이 궁금하다면? 이 포스트를 참고 import java.util.Arrays; import java.util.Scanner; public class DisjointSet { private static int[] parentArr; public static void main(String[] args) { Scanner scanner = new Scanner(System.in); int n = scanner.nextInt(); int m = scanner.nextInt();" />
-    <meta property="og:url" content="https://disj11.github.io/baekjoon-1717" />
+    <meta property="og:title" content="RBAC (Role Based Access Control - 역할 기반 접근 제어)" />
+    <meta property="og:description" content="잡담 역할 기반 접근 제어를 사용할 일이 필요해 검색을 하던 중, 좋은 글을 찾아 포스팅을 하게 되었습니다. 역할 기반 접근 제어의 설명보다는, 구현 방법에 대해 알아보기 위한 글입니다. 소개 역할 기반 접근 제어는 사용자의 역할에 따라 권한을 구분하고, 권한이 없는 사용자에게는 시스템 접근을 제한하는 방법이다. 사전에 역할을 미리 정의해두고, 사용자에게" />
+    <meta property="og:url" content="https://disj11.github.io/role-based-access-control" />
     <meta property="og:image" content="https://disj11.github.io/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2019-06-06T18:10:00+00:00" />
-    <meta property="article:modified_time" content="2019-06-06T18:10:00+00:00" />
-    <meta property="article:tag" content="Algorithm" />
+    <meta property="article:published_time" content="2019-06-15T02:30:00+00:00" />
+    <meta property="article:modified_time" content="2019-06-15T02:30:00+00:00" />
+    <meta property="article:tag" content="Database" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="백준 1717번 (집합의 표현)" />
-    <meta name="twitter:description" content="Union-Find(유니온 파인드)를 활용한 알고리즘 문제를 풀어보았습니다. 해당 문제가 궁금하다면 여기를 방문하세요. 유니온 파인드에 대한 내용이 궁금하다면? 이 포스트를 참고 import java.util.Arrays; import java.util.Scanner; public class DisjointSet { private static int[] parentArr; public static void main(String[] args) { Scanner scanner = new Scanner(System.in); int n = scanner.nextInt(); int m = scanner.nextInt();" />
+    <meta name="twitter:title" content="RBAC (Role Based Access Control - 역할 기반 접근 제어)" />
+    <meta name="twitter:description" content="잡담 역할 기반 접근 제어를 사용할 일이 필요해 검색을 하던 중, 좋은 글을 찾아 포스팅을 하게 되었습니다. 역할 기반 접근 제어의 설명보다는, 구현 방법에 대해 알아보기 위한 글입니다. 소개 역할 기반 접근 제어는 사용자의 역할에 따라 권한을 구분하고, 권한이 없는 사용자에게는 시스템 접근을 제한하는 방법이다. 사전에 역할을 미리 정의해두고, 사용자에게" />
     <meta name="twitter:url" content="https://disj11.github.io/" />
     <meta name="twitter:image" content="https://disj11.github.io/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Life Log" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Algorithm" />
+    <meta name="twitter:data2" content="Database" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -74,7 +74,7 @@
         "name": "Life Log",
         "logo": "https://disj11.github.io/"
     },
-    "url": "https://disj11.github.io/baekjoon-1717",
+    "url": "https://disj11.github.io/role-based-access-control",
     "image": {
         "@type": "ImageObject",
         "url": "https://disj11.github.io/assets/images/blog-cover.jpg",
@@ -83,9 +83,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://disj11.github.io/baekjoon-1717"
+        "@id": "https://disj11.github.io/role-based-access-control"
     },
-    "description": "Union-Find(유니온 파인드)를 활용한 알고리즘 문제를 풀어보았습니다. 해당 문제가 궁금하다면 여기를 방문하세요. 유니온 파인드에 대한 내용이 궁금하다면? 이 포스트를 참고 import java.util.Arrays; import java.util.Scanner; public class DisjointSet { private static int[] parentArr; public static void main(String[] args) { Scanner scanner = new Scanner(System.in); int n = scanner.nextInt(); int m = scanner.nextInt();"
+    "description": "잡담 역할 기반 접근 제어를 사용할 일이 필요해 검색을 하던 중, 좋은 글을 찾아 포스팅을 하게 되었습니다. 역할 기반 접근 제어의 설명보다는, 구현 방법에 대해 알아보기 위한 글입니다. 소개 역할 기반 접근 제어는 사용자의 역할에 따라 권한을 구분하고, 권한이 없는 사용자에게는 시스템 접근을 제한하는 방법이다. 사전에 역할을 미리 정의해두고, 사용자에게"
 }
     </script>
 
@@ -98,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="백준 1717번 (집합의 표현)" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RBAC (Role Based Access Control - 역할 기반 접근 제어)" href="/feed.xml" />
     <style>
         .highlighter-rouge, .highlight, code {
             width: 100%;
@@ -158,90 +158,179 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 6 June 2019"> 6 June 2019</time>
+                    <time class="post-full-meta-date" datetime="15 June 2019">15 June 2019</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/algorithm/'>ALGORITHM</a>,
-                            
-                        
-                            
-                               <a href='/tag/baekjoon/'>BAEKJOON</a>,
-                            
-                        
-                            
-                               <a href='/tag/union-find/'>UNION-FIND</a>
+                               <a href='/tag/database/'>DATABASE</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">백준 1717번 (집합의 표현)</h1>
+                <h1 class="post-full-title">RBAC (Role Based Access Control - 역할 기반 접근 제어)</h1>
             </header>
 
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <blockquote>
-  <p>Union-Find(유니온 파인드)를 활용한 알고리즘 문제를 풀어보았습니다.
-해당 문제가 궁금하다면 <a href="https://www.acmicpc.net/problem/1717" target="_blank">여기</a>를 방문하세요. <br />
-유니온 파인드에 대한 내용이 궁금하다면? <a href="https://disj11.github.io/union-find" target="_blank">이 포스트를 참고</a></p>
-</blockquote>
+                    <h3 id="잡담">잡담</h3>
+<p>역할 기반 접근 제어를 사용할 일이 필요해 검색을 하던 중,
+<a href="https://stackoverflow.com/questions/28157798/is-my-role-based-access-control-a-feasible-solution/28159647#28159647">좋은 글</a>을 찾아 포스팅을 하게 되었습니다.
+역할 기반 접근 제어의 설명보다는, 구현 방법에 대해 알아보기 위한 글입니다.</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+<h3 id="소개">소개</h3>
+<p>역할 기반 접근 제어는 사용자의 역할에 따라 권한을 구분하고,
+권한이 없는 사용자에게는 시스템 접근을 제한하는 방법이다.
+사전에 역할을 미리 정의해두고, 사용자에게 역할을 부여함으로써 권한을 제어한다.</p>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">DisjointSet</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">parentArr</span><span class="o">;</span>
+<h3 id="간단한-솔루션">간단한 솔루션</h3>
+<p>Stackoverflow 같은 사이트를 만든다고 가정하자.
+우리는 아래와 같은 두 가지 모듈이 필요한 상황이다.</p>
+<ul>
+  <li>질문 (questions)</li>
+  <li>채팅 (chat)</li>
+</ul>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
-        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-        <span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-        <span class="n">String</span><span class="o">[]</span> <span class="n">resultArr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[</span><span class="n">m</span><span class="o">];</span>
-        <span class="n">parentArr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="o">];</span>
+<p>이 모듈의 권한을 관리하기 위해서는 아래와 같은 테이블이 필요하다.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Modules
+- id : 모듈의 고유 ID
+- name : 모듈에 대한 설명
+</code></pre></div></div>
+<p>그리고 이 모듈들이 할 수 있는 액션을 정의한다.
+예를 들어 질문 모듈의 경우</p>
+<ol>
+  <li>질문 등록</li>
+  <li>질문 삭제</li>
+</ol>
 
-        <span class="n">Arrays</span><span class="o">.</span><span class="na">fill</span><span class="o">(</span><span class="n">parentArr</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">);</span>
-        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">m</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-            <span class="kt">int</span> <span class="n">calc</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-            <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-            <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+<p>등등 이 있을 수 있고, 채팅 모듈의 경우</p>
 
-            <span class="k">if</span> <span class="o">(</span><span class="n">calc</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">union</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">);</span>
-            <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">calc</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
-                <span class="kt">int</span> <span class="n">parentA</span> <span class="o">=</span> <span class="n">find</span><span class="o">(</span><span class="n">a</span><span class="o">);</span>
-                <span class="kt">int</span> <span class="n">parentB</span> <span class="o">=</span> <span class="n">find</span><span class="o">(</span><span class="n">b</span><span class="o">);</span>
-                <span class="n">resultArr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">parentA</span> <span class="o">==</span> <span class="n">parentB</span> <span class="o">&amp;&amp;</span> <span class="n">parentA</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">?</span> <span class="s">"YES"</span> <span class="o">:</span> <span class="s">"NO"</span><span class="o">;</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
+<ol>
+  <li>채팅방 열기</li>
+  <li>강퇴</li>
+</ol>
 
-        <span class="k">for</span> <span class="o">(</span><span class="n">String</span> <span class="n">result</span> <span class="o">:</span> <span class="n">resultArr</span><span class="o">)</span> <span class="o">{</span>
-            <span class="k">if</span> <span class="o">(</span><span class="n">result</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
+<p>등등이 있을 수 있다.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Actions
+- module_id : 사전에 정의한 모듈의 ID
+- action : 모듈의 기능
+- name : 기능에 대한 설명
 
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">find</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">if</span> <span class="o">(</span><span class="n">parentArr</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-            <span class="k">return</span> <span class="n">n</span><span class="o">;</span>
-        <span class="o">}</span>
+- Primary Key : [module_id, name]
+</code></pre></div></div>
 
-        <span class="n">parentArr</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">=</span> <span class="n">find</span><span class="o">(</span><span class="n">parentArr</span><span class="o">[</span><span class="n">n</span><span class="o">]);</span>
-        <span class="k">return</span> <span class="n">parentArr</span><span class="o">[</span><span class="n">n</span><span class="o">];</span>
-    <span class="o">}</span>
+<p>이제 두 테이블을 정의한 모습을 보자.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Modules
++------------------------------------------+
+| ID        | Name                         |
++------------------------------------------+
+| questions | Question and Answer Module   |
+| chat      | Chat Module                  |
++------------------------------------------+
+</code></pre></div></div>
 
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">union</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="n">find</span><span class="o">(</span><span class="n">a</span><span class="o">);</span>
-        <span class="n">b</span> <span class="o">=</span> <span class="n">find</span><span class="o">(</span><span class="n">b</span><span class="o">);</span>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Actions
++-----------------------------------------------+
+| Module    | Action    |  Name                 |
++-----------------------------------------------+
+| questions | read      | Read Questions        |
+| questions | create    | Create Questions      |
+| questions | edit      | Edit Questions        |
+| questions | delete    | Delete Questions      |
+|           |           |                       |
+| chat      | join      | Join the Chat         |
+| chat      | kick      | Kick users            |
+| chat      | create    | Create Chatrooms      |
++-----------------------------------------------+  
+</code></pre></div></div>
+<p>여기서 중요한 점은 위 두 테이블은 <em>시스템 관리자가 직접 수정할 수 없는 데이터</em>이므로,
+기능 추가 / 제거와 같은 GUI 가 있어서는 안된다는 점이다.</p>
 
-        <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">parentArr</span><span class="o">[</span><span class="n">a</span><span class="o">]</span> <span class="o">=</span> <span class="n">b</span><span class="o">;</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-<span class="o">}</span>
+<p>여기까지 만들어졌다면 이제는 역할을 만들어야 한다.
+역할 테이블은 위 테이블들과는 달리 관리자에 의해 관리될 수 있으며,
+기본적으로 아래와 같은 역할이 있을 수 있다.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Q&amp;A User:
+   - 질문을 읽을 수 있음
+   - 질문을 등록 할 수 있음
+Q&amp;A Moderator:
+   - 질문을 읽을 수 있음
+   - 질문을 등록 할 수 있음
+   - 질문을 수정할 수 있음
+Q&amp;A Admin:
+   - 질문을 읽을 수 있음
+   - 질문을 등록 할 수 있음
+   - 질문을 수정할 수 있음
+   - 질문을 삭제 할 수 있음
+
+Chat User:
+   - 채팅방에 참여할 수 있음
+
+Chat Moderator:
+   - 채팅방에 참여할 수 있음
+   - 채팅방에서 사용자를 강퇴할 수 있음
+
+Chat Admin:
+   - 채팅방에 참여할 수 있음
+   - 채팅방에서 사용자를 강퇴할 수 있음
+   - 채팅방을 개설할 수 있음
+</code></pre></div></div>
+<p>그럼 위 내용을 바탕으로 역할 테이블을 만들어 보자</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Roles
++-----------------------+
+| ID | Name             |
++-----------------------+
+| 1  | Q&amp;A User         |
+| 2  | Q&amp;A Moderator    |
+| 3  | Q&amp;A Admin        |
+| 4  | Chat User        |
+| 5  | Chat Moderator   |
+| 6  | Chat Admin       |
++-----------------------+
+</code></pre></div></div>
+<p>위와 같은 테이블이 탄생하였다.
+이제 역할에서 허용할 기능을 알려줄 <code class="highlighter-rouge">roles_actions</code>을 정의하자.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Roles_Actions
+  - role_id
+  - module_id 
+  - action
+
+  PK: [role_id, module_id, action]
+</code></pre></div></div>
+<p>위 테이블에는 아래와 같은 내용이 들어가게 될 것이다.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Roles_Actions
++--------------------------------+
+| Role ID | Module ID | Action   |
++--------------------------------+
+|    1    | questions |  read    |
+|    1    | questions |  create  |
+|    2    | questions |  read    |
+|    2    | questions |  create  |
+|    2    | questions |  edit    |
+               ...  
+|    6    |    chat   |  join    |
+|    6    |    chat   |  kick    |
+|    6    |    chat   |  create  |
++--------------------------------+
+</code></pre></div></div>
+<p>마지막으로 사용자에게 역할을 부여하기 위한 테이블 <code class="highlighter-rouge">users_roles</code>을 정의하자.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># User_Roles
+   - user_id [FK:user_id, unsigned]
+   - role_id [FK:roles_id, unsigned]
+</code></pre></div></div>
+<p>테이블의 내용은 아래와 같다.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Users_Roles
++---------------------------------+
+| User ID | Role ID               |
++---------------------------------+
+|    1    |  3 (= Q&amp;A Admin)      |
+|    1    |  6 (= Chat Admin)     |
+|    2    |  2 (= Q&amp;A Moderator)  |    
+|    2    |  4 (= Chat User)      |
+|    3    |  2 (= Q&amp;A Moderator)  |  
+|    3    |  5 (= Chat Moderator) | 
++---------------------------------+
 </code></pre></div></div>
 
                 </div>
@@ -316,7 +405,7 @@ into the {body} of the default.hbs template -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; Life Log &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/algorithm/">Algorithm</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/database/">Database</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -326,38 +415,13 @@ into the {body} of the default.hbs template -->
                                 
                                 
                                   
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/backtracking">Backtracking (되추적 기법)</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/baekjoon-1976">백준 1976 (여행 가자)</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
                                     
                                   
                                 
                                   
                                 
                                   
-                                    
-                                        
-                                        
-                                            <li><a href="/baekjoon-1327">백준 1327번 (소트 게임)</a></li>
-                                        
-                                    
+                                
                                   
                                 
                                   
@@ -370,7 +434,13 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
+                                            <li><a href="/inverted-index">Inverted index (역색인)</a></li>
+                                        
                                     
+                                  
+                                
+                                  
+                                
                                   
                                 
                                   
@@ -378,9 +448,9 @@ into the {body} of the default.hbs template -->
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/algorithm/">
+                            <a href="/tag/database/">
                                 
-                                    See all 4 posts  →
+                                    See all 1 posts  →
                                 
                             </a>
                         </footer>
@@ -390,59 +460,6 @@ into the {body} of the default.hbs template -->
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
-
-    <article class="post-card post-template no-image">
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/baekjoon-1976">
-                <header class="post-card-header">
-                    
-                        
-                            
-                               <span class="post-card-tags">Algorithm</span>
-                            
-                        
-                            
-                               <span class="post-card-tags">Baekjoon</span>
-                            
-                        
-                            
-                                <span class="post-card-tags">Union-find</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">백준 1976 (여행 가자)</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/images/ghost.png" alt="Saturday" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/saturday/">Saturday</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -451,21 +468,21 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/union-find">
+            <a class="post-card-content-link" href="/backtracking">
                 <header class="post-card-header">
                     
                         
                             
-                               <span class="post-card-tags">Data structure</span>
+                               <span class="post-card-tags">Algorithm</span>
                             
                         
                             
-                                <span class="post-card-tags">Union-find</span>
+                                <span class="post-card-tags">Backtracking</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Union-Find (유니온 파인드)</h2>
+                    <h2 class="post-card-title">Backtracking (되추적 기법)</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -509,18 +526,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">백준 1717번 (집합의 표현)</div>
+    <div class="floating-header-title">RBAC (Role Based Access Control - 역할 기반 접근 제어)</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%EB%B0%B1%EC%A4%80+1717%EB%B2%88+%28%EC%A7%91%ED%95%A9%EC%9D%98+%ED%91%9C%ED%98%84%29&amp;url=https://disj11.github.io/baekjoon-1717"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=RBAC+%28Role+Based+Access+Control+-+%EC%97%AD%ED%95%A0+%EA%B8%B0%EB%B0%98+%EC%A0%91%EA%B7%BC+%EC%A0%9C%EC%96%B4%29&amp;url=https://disj11.github.io/role-based-access-control"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://disj11.github.io/baekjoon-1717"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://disj11.github.io/role-based-access-control"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
