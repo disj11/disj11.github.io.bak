@@ -2,7 +2,7 @@
 layout: post
 current: post
 navigation: True
-title: RBAC (Role Based Access Control : 역할 기반 접근 제어)
+title: RBAC (Role Based Access Control - 역할 기반 접근 제어)
 date: 2019-06-15 02:30
 tags: [Database]
 class: post-template
