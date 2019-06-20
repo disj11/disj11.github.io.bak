@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-06-15T15:40:28+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">RBAC (Role Based Access Control - 역할 기반 접근 제어)</title><link href="https://disj11.github.io/role-based-access-control" rel="alternate" type="text/html" title="RBAC (Role Based Access Control - 역할 기반 접근 제어)" /><published>2019-06-15T02:30:00+00:00</published><updated>2019-06-15T02:30:00+00:00</updated><id>https://disj11.github.io/role-based-access-control</id><content type="html" xml:base="https://disj11.github.io/role-based-access-control">&lt;h3 id=&quot;잡담&quot;&gt;잡담&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-06-20T14:33:30+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">애니메이션 정보 확인 사이트 (Toy Project)</title><link href="https://disj11.github.io/anilist" rel="alternate" type="text/html" title="애니메이션 정보 확인 사이트 (Toy Project)" /><published>2019-06-20T23:13:00+00:00</published><updated>2019-06-20T23:13:00+00:00</updated><id>https://disj11.github.io/anilist</id><content type="html" xml:base="https://disj11.github.io/anilist">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;회사에서 사용하는 기술만 사용하다보니, 너무 정체되는 것 같은 생각이 들었다.
+요즘 GraphQL, React 같은 글들이 많이 접하여, 이게 뭐지 하고 궁금했던 차에 무언가 하나 만들어 보자는 생각이 들었다.
+원래 애니메이션을 좋아했기 때문에 애니메이션 정보를 확인할 수 있는 사이트를 만들기로 했다.
+찾다보니 애니메이션, 만화 등의 정보를 GraphQL로 제공해주는 &lt;a href=&quot;https://github.com/AniList/ApiV2-GraphQL-Docs&quot;&gt;사이트&lt;/a&gt;를 발견하였다.
+좋아 만들어보자. 하고 2~3일에 걸쳐 사이트를 만들었다.
+단순히 GraphQL과 React 가 무엇인지 한번 써보고 싶어 만들었기 때문에, 코드는 안보는 것이 좋을 것 같다.
+그래도 보고 싶다면 &lt;a href=&quot;https://github.com/disj11/anilistql-client&quot;&gt;여기&lt;/a&gt;로…&lt;/p&gt;
+
+&lt;h3 id=&quot;사이트-화면&quot;&gt;사이트 화면&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;em&gt;메인 화면&lt;/em&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/anilist-main.png&quot; alt=&quot;메인 화면&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;em&gt;검색 화면&lt;/em&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/anilist-search.png&quot; alt=&quot;검색 화면&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;em&gt;상세 화면&lt;/em&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/anilist-detail.png&quot; alt=&quot;상세 화면&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Saturday</name></author><category term="Toy Project" /><summary type="html">소개 회사에서 사용하는 기술만 사용하다보니, 너무 정체되는 것 같은 생각이 들었다. 요즘 GraphQL, React 같은 글들이 많이 접하여, 이게 뭐지 하고 궁금했던 차에 무언가 하나 만들어 보자는 생각이 들었다. 원래 애니메이션을 좋아했기 때문에 애니메이션 정보를 확인할 수 있는 사이트를 만들기로 했다. 찾다보니 애니메이션, 만화 등의 정보를 GraphQL로 제공해주는 사이트를 발견하였다. 좋아 만들어보자. 하고 2~3일에 걸쳐 사이트를 만들었다. 단순히 GraphQL과 React 가 무엇인지 한번 써보고 싶어 만들었기 때문에, 코드는 안보는 것이 좋을 것 같다. 그래도 보고 싶다면 여기로…</summary></entry><entry><title type="html">RBAC (Role Based Access Control - 역할 기반 접근 제어)</title><link href="https://disj11.github.io/role-based-access-control" rel="alternate" type="text/html" title="RBAC (Role Based Access Control - 역할 기반 접근 제어)" /><published>2019-06-15T02:30:00+00:00</published><updated>2019-06-15T02:30:00+00:00</updated><id>https://disj11.github.io/role-based-access-control</id><content type="html" xml:base="https://disj11.github.io/role-based-access-control">&lt;h3 id=&quot;잡담&quot;&gt;잡담&lt;/h3&gt;
 &lt;p&gt;역할 기반 접근 제어를 사용할 일이 필요해 검색을 하던 중,
 &lt;a href=&quot;https://stackoverflow.com/questions/28157798/is-my-role-based-access-control-a-feasible-solution/28159647#28159647&quot;&gt;좋은 글&lt;/a&gt;을 찾아 포스팅을 하게 되었습니다.
 역할 기반 접근 제어의 설명보다는, 구현 방법에 대해 알아보기 위한 글입니다.&lt;/p&gt;
@@ -819,40 +867,4 @@ IE와 Edge에서도 사용 가능하다&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;자세한-내용은&quot;&gt;자세한 내용은?&lt;/h3&gt;
-&lt;p&gt;SSE, Server sent events 등으로 구글링 하면 많이 나와요.&lt;/p&gt;</content><author><name>Saturday</name></author><category term="Spring" /><category term="SSE" /><summary type="html">소개 실시간으로 웹 애플리게이션 서버에서 클라이언트로 데이터를 전송하는 방법 중 하나이다. 이러한 방법에는 WebSoket을 이용하는 방법도 있지만, WebSocket은 서버와 클라이언트의 양방향 통신을 하기 위해 사용한다면, SSE는 서버에서 클라이언트로 데이터를 전송하는 단방향 통신만 필요로 하는 경우 사용한다.</summary></entry><entry><title type="html">백준 14501번 (퇴사)</title><link href="https://disj11.github.io/baekjoon-14501" rel="alternate" type="text/html" title="백준 14501번 (퇴사)" /><published>2019-04-19T15:40:00+00:00</published><updated>2019-04-19T15:40:00+00:00</updated><id>https://disj11.github.io/baekjoon-14501</id><content type="html" xml:base="https://disj11.github.io/baekjoon-14501">&lt;blockquote&gt;
-  &lt;p&gt;DP (Dynamic Programing : 동적 프로그래밍)을 활용한 알고리즘 문제를 풀어보았습니다.
-해당 문제가 궁금하다면 &lt;a href=&quot;https://www.acmicpc.net/problem/14501&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 방문하세요.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAX_T&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 상담을 완료하는데 걸리는 시간의 최댓값&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;Scanner&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scanner&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// 마지막 날의 상담 기간을 고려하여 MAX_T 만큼의 여유를 줌&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAX_T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// i + 1 일 일때 상담을 완료하는데 걸리는 시간&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAX_T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// i + 1 일 일때 받을 수 있는 금액&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAX_T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// i + 1 일 일때 받을 수 있는 총 금액&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// 마지막 날의 상담 기간이 하루라면 마지막 날의 금액도 포함되어야 하므로&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// n과 같은 경우도 포함하여 루프&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Saturday</name></author><category term="Algorithm" /><category term="Baekjoon" /><category term="DP" /><summary type="html">DP (Dynamic Programing : 동적 프로그래밍)을 활용한 알고리즘 문제를 풀어보았습니다. 해당 문제가 궁금하다면 여기를 방문하세요.</summary></entry></feed>
+&lt;p&gt;SSE, Server sent events 등으로 구글링 하면 많이 나와요.&lt;/p&gt;</content><author><name>Saturday</name></author><category term="Spring" /><category term="SSE" /><summary type="html">소개 실시간으로 웹 애플리게이션 서버에서 클라이언트로 데이터를 전송하는 방법 중 하나이다. 이러한 방법에는 WebSoket을 이용하는 방법도 있지만, WebSocket은 서버와 클라이언트의 양방향 통신을 하기 위해 사용한다면, SSE는 서버에서 클라이언트로 데이터를 전송하는 단방향 통신만 필요로 하는 경우 사용한다.</summary></entry></feed>
