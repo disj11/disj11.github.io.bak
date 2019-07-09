@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/tag/getting-started/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2019-07-09T14:53:42+00:00</updated>
+  <updated>2019-07-09T15:05:16+00:00</updated>
   <id>https://disj11.github.io/tag/getting-started/feed.xml</id>
 
   
@@ -37,11 +37,7 @@
       <published>2019-04-19T15:30:00+00:00</published>
       <updated>2019-04-19T15:30:00+00:00</updated>
       <id>https://disj11.github.io/welcome</id>
-      <content type="html" xml:base="https://disj11.github.io/welcome">&lt;p&gt;안녕하세요. 생각을 기록할 곳이 필요해 만든 블로그입니다.&lt;/p&gt;
-
-&lt;p&gt;앞으로 잊고 싶지 않은 기억들을 하나씩 정리해 둘 생각입니다.&lt;/p&gt;
-
-&lt;p&gt;그럼 이만…&lt;/p&gt;</content>
+      <content type="html" xml:base="https://disj11.github.io/welcome">&lt;p&gt;잊어도 다시 떠올릴 수 있도록 &lt;em&gt;기록&lt;/em&gt; 하자.&lt;/p&gt;</content>
 
       
       
@@ -62,7 +58,7 @@
       
 
       
-        <summary type="html">안녕하세요. 생각을 기록할 곳이 필요해 만든 블로그입니다.</summary>
+        <summary type="html">잊어도 다시 떠올릴 수 있도록 기록 하자.</summary>
       
 
       

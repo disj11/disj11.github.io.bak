@@ -245,8 +245,7 @@ SSE는 서버에서 클라이언트로 데이터를 전송하는 단방향 통�
       <item>
         <title>Welcome</title>
         
-          <description>&lt;p&gt;안녕하세요. 생각을 기록할 곳이 필요해 만든 블로그입니다.&lt;/p&gt;
-
+          <description>&lt;p&gt;잊어도 다시 떠올릴 수 있도록 &lt;em&gt;기록&lt;/em&gt; 하자.&lt;/p&gt;
 </description>
         
         <pubDate>Fri, 19 Apr 2019 15:30:00 +0000</pubDate>
