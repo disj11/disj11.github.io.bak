@@ -8,6 +8,23 @@
     
       
       <item>
+        <title>Trie (트라이)</title>
+        
+          <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;트라이라는 자료구조의 명칭은 Re&lt;strong&gt;trie&lt;/strong&gt;val(탐색)에서 유래되었다고 한다.
+유래에서 알 수 있 듯 트라이는 문자열을 효율적으로 검색하기 위한 자료구조 중 하나이다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 15 Aug 2019 16:01:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/trie</link>
+        <guid isPermaLink="true">https://disj11.github.io/trie</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>MyBatis 1:1, 1:N 관계 매핑 (association, collection)</title>
         
           <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;

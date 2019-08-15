@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/author/saturday/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2019-07-24T12:35:01+00:00</updated>
+  <updated>2019-08-15T07:05:07+00:00</updated>
   <id>https://disj11.github.io/author/saturday/feed.xml</id>
 
   
@@ -30,6 +30,53 @@
   
   
 
+  
+    <entry>
+      <title type="html">Trie (트라이)</title>
+      <link href="https://disj11.github.io/trie" rel="alternate" type="text/html" title="Trie (트라이)" />
+      <published>2019-08-15T16:01:00+00:00</published>
+      <updated>2019-08-15T16:01:00+00:00</updated>
+      <id>https://disj11.github.io/trie</id>
+      <content type="html" xml:base="https://disj11.github.io/trie">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;트라이라는 자료구조의 명칭은 Re&lt;strong&gt;trie&lt;/strong&gt;val(탐색)에서 유래되었다고 한다.
+유래에서 알 수 있 듯 트라이는 문자열을 효율적으로 검색하기 위한 자료구조 중 하나이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;구조&quot;&gt;구조&lt;/h3&gt;
+&lt;p&gt;트라이는 트리 구조로 만들 수 있다.
+우리가 영어사전에서 tea라는 단어를 찾는다고 가정해보자. 우리는 가장 먼저 사전의 ‘t’ 란을 찾을 것이다. 그 후 차례로 ‘e’, ‘a’ 를 찾아 tea라는 단어를 찾을 수 있다. 이를 논리적으로 표현한 구조가 바로 트라이이다.
+&lt;img src=&quot;/assets/images/trie-example.svg&quot; alt=&quot;트라이 구조&quot; /&gt;
+이러한 구조는 문자열 탐색을 위해 많은 공간을 필요로 하지만 문자열의 길이가 m 이라면 O(m) 의 시간복잡도를 갖는 초고속 탐색을 가능하게 한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;trie-in-java&quot;&gt;Trie in Java&lt;/h3&gt;
+&lt;p&gt;트라이의 구현은 &lt;a href=&quot;https://www.baeldung.com/trie-java&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;에서 확인할 수 있다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Saturday</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Data Structure" />
+      
+        <category term="Trie" />
+      
+
+      
+        <summary type="html">소개 트라이라는 자료구조의 명칭은 Retrieval(탐색)에서 유래되었다고 한다. 유래에서 알 수 있 듯 트라이는 문자열을 효율적으로 검색하기 위한 자료구조 중 하나이다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">MyBatis 1:1, 1:N 관계 매핑 (association, collection)</title>
@@ -1119,118 +1166,6 @@ union 연산의 시간 복잡도도 find 연산과 마찬가지로 O(M)으로 �
 
       
         <summary type="html">BSF(Breadth First Search : 너비 우선 탐색)를 활용한 알고리즘 문제를 풀어보았습니다. 해당 문제가 궁금하다면 여기를 방문하세요.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Bit Masking (비트마스킹)</title>
-      <link href="https://disj11.github.io/bitmasking" rel="alternate" type="text/html" title="Bit Masking (비트마스킹)" />
-      <published>2019-06-01T10:47:00+00:00</published>
-      <updated>2019-06-01T10:47:00+00:00</updated>
-      <id>https://disj11.github.io/bitmasking</id>
-      <content type="html" xml:base="https://disj11.github.io/bitmasking">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;비트는 0, 1의 값을 가질 수 있는 데이터의 최소 단위이다.
-비트 마스크는 이러한 비트에 마스크를 씌워 비트의 값에 변화를 주는 행위이다.
-이 설명으로는 비트마스킹이 무엇인지 표현이 잘 안되는데, 아래에서 상세히 다뤄보자.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;and-연산&quot;&gt;AND 연산&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;AND 연산은 비트의 값과 마스크의 값이 모두 1일 때에는 1, 그 외의 경우는 0이 된다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;VALUE&lt;/td&gt;
-      &lt;td&gt;0000 0101&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;MASK&lt;/td&gt;
-      &lt;td&gt;0000 1111&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;RESULT&lt;/td&gt;
-      &lt;td&gt;0000 0101&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;or-연산&quot;&gt;OR 연산&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;OR 연산은 비트의 값과 마스크의 값중 하나라도 1일 때에는 1, 모두 0일 때에는 0이 된다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;VALUE&lt;/td&gt;
-      &lt;td&gt;0000 0101&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;MASK&lt;/td&gt;
-      &lt;td&gt;0000 1111&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;RESULT&lt;/td&gt;
-      &lt;td&gt;0000 1111&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;xor-연산&quot;&gt;XOR 연산&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;XOR 연산은 비트의 값과 마스크의 값이 값으면 0, 다르면 1이 된다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;자주-사용하는-연산&quot;&gt;자주 사용하는 연산&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;k번 비트가 1인지 0인지 확인 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;status &amp;amp; (1 &amp;lt;&amp;lt; k)&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;k번 비트를 1로 만들고 싶다. &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;status = status | (1 &amp;lt;&amp;lt; k)&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;status |= (1 &amp;lt;&amp;lt; k)&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;k번 비트를 0으로 만들고 싶다. &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;status = status &amp;amp; ~(1&amp;lt;&amp;lt;k)&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;status &amp;amp;= ~(1&amp;lt;&amp;lt;k)&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;위의 내용을 모두 읽어도 1~3번 이해가 안 간다면,
-비트 NOT 연산, 비트 시프트 연산에 대하여 찾아보면 좋다.&lt;/p&gt;
-
-&lt;h3 id=&quot;참고&quot;&gt;참고&lt;/h3&gt;
-&lt;p&gt;JAVA의 경우는 EnumSet이라고 하는 데이터 타입을 제공하여,
-특별한 경우가 아니라면 비트 연산을 사용하는 경우가 드물다.
-EnumSet의 자세한 정보가 궁금하다면, &lt;a href=&quot;https://www.baeldung.com/java-enumset&quot;&gt;https://www.baeldung.com/java-enumset&lt;/a&gt;
-사이트를 참고하면 된다.&lt;/p&gt;
-
-&lt;p&gt;[참고 사이트] &lt;br /&gt;
-&lt;a href=&quot;https://kks227.blog.me/&quot; target=&quot;_blank&quot;&gt;https://kks227.blog.me/&lt;/a&gt;&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Saturday</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="Data Structure" />
-      
-        <category term="Bit Masking" />
-      
-
-      
-        <summary type="html">소개 비트는 0, 1의 값을 가질 수 있는 데이터의 최소 단위이다. 비트 마스크는 이러한 비트에 마스크를 씌워 비트의 값에 변화를 주는 행위이다. 이 설명으로는 비트마스킹이 무엇인지 표현이 잘 안되는데, 아래에서 상세히 다뤄보자.</summary>
       
 
       

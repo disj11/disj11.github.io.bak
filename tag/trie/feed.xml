@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://disj11.github.io/tag/trie/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
+  <updated>2019-08-15T07:05:07+00:00</updated>
+  <id>https://disj11.github.io/tag/trie/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Life Log | </title>
+  
+
+  
+    <subtitle>Record my life</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Trie (트라이)</title>
+      <link href="https://disj11.github.io/trie" rel="alternate" type="text/html" title="Trie (트라이)" />
+      <published>2019-08-15T16:01:00+00:00</published>
+      <updated>2019-08-15T16:01:00+00:00</updated>
+      <id>https://disj11.github.io/trie</id>
+      <content type="html" xml:base="https://disj11.github.io/trie">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;트라이라는 자료구조의 명칭은 Re&lt;strong&gt;trie&lt;/strong&gt;val(탐색)에서 유래되었다고 한다.
+유래에서 알 수 있 듯 트라이는 문자열을 효율적으로 검색하기 위한 자료구조 중 하나이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;구조&quot;&gt;구조&lt;/h3&gt;
+&lt;p&gt;트라이는 트리 구조로 만들 수 있다.
+우리가 영어사전에서 tea라는 단어를 찾는다고 가정해보자. 우리는 가장 먼저 사전의 ‘t’ 란을 찾을 것이다. 그 후 차례로 ‘e’, ‘a’ 를 찾아 tea라는 단어를 찾을 수 있다. 이를 논리적으로 표현한 구조가 바로 트라이이다.
+&lt;img src=&quot;/assets/images/trie-example.svg&quot; alt=&quot;트라이 구조&quot; /&gt;
+이러한 구조는 문자열 탐색을 위해 많은 공간을 필요로 하지만 문자열의 길이가 m 이라면 O(m) 의 시간복잡도를 갖는 초고속 탐색을 가능하게 한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;trie-in-java&quot;&gt;Trie in Java&lt;/h3&gt;
+&lt;p&gt;트라이의 구현은 &lt;a href=&quot;https://www.baeldung.com/trie-java&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;에서 확인할 수 있다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Saturday</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Data Structure" />
+      
+        <category term="Trie" />
+      
+
+      
+        <summary type="html">소개 트라이라는 자료구조의 명칭은 Retrieval(탐색)에서 유래되었다고 한다. 유래에서 알 수 있 듯 트라이는 문자열을 효율적으로 검색하기 위한 자료구조 중 하나이다.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
