@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/tag/data-structure/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2019-08-15T07:05:07+00:00</updated>
+  <updated>2019-08-15T07:17:54+00:00</updated>
   <id>https://disj11.github.io/tag/data-structure/feed.xml</id>
 
   
@@ -44,7 +44,7 @@
 &lt;h3 id=&quot;구조&quot;&gt;구조&lt;/h3&gt;
 &lt;p&gt;트라이는 트리 구조로 만들 수 있다.
 우리가 영어사전에서 tea라는 단어를 찾는다고 가정해보자. 우리는 가장 먼저 사전의 ‘t’ 란을 찾을 것이다. 그 후 차례로 ‘e’, ‘a’ 를 찾아 tea라는 단어를 찾을 수 있다. 이를 논리적으로 표현한 구조가 바로 트라이이다.
-&lt;img src=&quot;/assets/images/trie-example.svg&quot; alt=&quot;트라이 구조&quot; /&gt;
+&lt;img src=&quot;/assets/images/trie-example.svg?sanitize=true&quot; alt=&quot;트라이 구조&quot; /&gt;
 이러한 구조는 문자열 탐색을 위해 많은 공간을 필요로 하지만 문자열의 길이가 m 이라면 O(m) 의 시간복잡도를 갖는 초고속 탐색을 가능하게 한다.&lt;/p&gt;
 
 &lt;h3 id=&quot;trie-in-java&quot;&gt;Trie in Java&lt;/h3&gt;
