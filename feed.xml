@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-08-15T07:25:37+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Trie (트라이)</title><link href="https://disj11.github.io/trie" rel="alternate" type="text/html" title="Trie (트라이)" /><published>2019-08-15T16:01:00+00:00</published><updated>2019-08-15T16:01:00+00:00</updated><id>https://disj11.github.io/trie</id><content type="html" xml:base="https://disj11.github.io/trie">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-08-28T05:31:39+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Trie (트라이)</title><link href="https://disj11.github.io/trie" rel="alternate" type="text/html" title="Trie (트라이)" /><published>2019-08-15T16:01:00+00:00</published><updated>2019-08-15T16:01:00+00:00</updated><id>https://disj11.github.io/trie</id><content type="html" xml:base="https://disj11.github.io/trie">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
 &lt;p&gt;트라이라는 자료구조의 명칭은 Re&lt;strong&gt;trie&lt;/strong&gt;val(탐색)에서 유래되었다고 한다.
 유래에서 알 수 있 듯 트라이는 문자열을 효율적으로 검색하기 위한 자료구조 중 하나이다.&lt;/p&gt;
 
@@ -298,7 +298,7 @@ PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;
 - action : 모듈의 기능
 - name : 기능에 대한 설명
 
-- Primary Key : [module_id, name]
+- Primary Key : [module_id, action]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;이제 두 테이블을 정의한 모습을 보자.&lt;/p&gt;
