@@ -49,7 +49,7 @@ Stackoverflow 같은 사이트를 만든다고 가정하자.
 - action : 모듈의 기능
 - name : 기능에 대한 설명
 
-- Primary Key : [module_id, name]
+- Primary Key : [module_id, action]
 ```
 
 이제 두 테이블을 정의한 모습을 보자.
