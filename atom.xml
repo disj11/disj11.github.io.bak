@@ -8,6 +8,23 @@
     
       
       <item>
+        <title>스프링 부트 문서 번역 (Spring Boot Reference Documentation)</title>
+        
+          <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;영어 공부를 위하여 &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/2.2.0.RELEASE/reference/html/index.html&quot;&gt;Spring Boot Reference Documentation&lt;/a&gt;
+를 번역한 프로젝트입니다. 차근차근 진행할 예정입니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 29 Oct 2019 20:48:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/spring-boot-reference-docs</link>
+        <guid isPermaLink="true">https://disj11.github.io/spring-boot-reference-docs</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>애니메이션 정보 확인 사이트 V2 (Toy Project)</title>
         
           <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;

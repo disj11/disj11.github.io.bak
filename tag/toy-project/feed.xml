@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/tag/toy-project/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2019-10-04T09:49:18+00:00</updated>
+  <updated>2019-10-29T12:00:08+00:00</updated>
   <id>https://disj11.github.io/tag/toy-project/feed.xml</id>
 
   
@@ -30,6 +30,46 @@
   
   
 
+  
+    <entry>
+      <title type="html">스프링 부트 문서 번역 (Spring Boot Reference Documentation)</title>
+      <link href="https://disj11.github.io/spring-boot-reference-docs" rel="alternate" type="text/html" title="스프링 부트 문서 번역 (Spring Boot Reference Documentation)" />
+      <published>2019-10-29T20:48:00+00:00</published>
+      <updated>2019-10-29T20:48:00+00:00</updated>
+      <id>https://disj11.github.io/spring-boot-reference-docs</id>
+      <content type="html" xml:base="https://disj11.github.io/spring-boot-reference-docs">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;영어 공부를 위하여 &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/2.2.0.RELEASE/reference/html/index.html&quot;&gt;Spring Boot Reference Documentation&lt;/a&gt;
+를 번역한 프로젝트입니다. 차근차근 진행할 예정입니다.&lt;/p&gt;
+
+&lt;p&gt;오역이 있을 수 있으니 참고만 해주세요.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/disj11/spring-boot-reference&quot;&gt;스프링 부트 문서 번역본&lt;/a&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Saturday</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Toy Project" />
+      
+
+      
+        <summary type="html">소개 영어 공부를 위하여 Spring Boot Reference Documentation 를 번역한 프로젝트입니다. 차근차근 진행할 예정입니다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">애니메이션 정보 확인 사이트 V2 (Toy Project)</title>
