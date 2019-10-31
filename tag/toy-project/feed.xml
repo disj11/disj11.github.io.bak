@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/tag/toy-project/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2019-10-29T12:00:08+00:00</updated>
+  <updated>2019-10-31T02:33:37+00:00</updated>
   <id>https://disj11.github.io/tag/toy-project/feed.xml</id>
 
   
@@ -43,7 +43,81 @@
 
 &lt;p&gt;오역이 있을 수 있으니 참고만 해주세요.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/disj11/spring-boot-reference&quot;&gt;스프링 부트 문서 번역본&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a href=&quot;https://github.com/disj11/spring-boot-reference&quot;&gt;스프링 부트 문서 번역본 Github Repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The reference documentation consists of the following sections:&lt;br /&gt;
+이 문서는 다음과 같은 섹션으로 구성되어 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Legal&lt;/strong&gt;&lt;br /&gt;
+Legal information.&lt;br /&gt;
+법률 정보&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Documentation Overview&lt;/strong&gt;&lt;br /&gt;
+About the Documentation, Getting Help, First Steps, and more.&lt;br /&gt;
+설명서, 도움말, 첫 단계 등에 대한 정보&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/disj11/spring-boot-reference/blob/master/Getting_Stated.md&quot;&gt;Getting Started&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+Introducing Spring Boot, System Requirements, Servlet Containers, Installing Spring Boot, Developing Your First Spring Boot Application&lt;br /&gt;
+스프링 부트 소개, 시스템 요구사항, 서블릿 컨테이너, 스프링 부트 설치, 첫번째 스프링 부트 어플리케이션 개발&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Using Spring Boot&lt;/strong&gt;&lt;br /&gt;
+Build Systems, Structuring Your Code, Configuration, Spring Beans and Dependency Injection, and more.&lt;br /&gt;
+빌드 시스템, 코드 구조, 구성, 스프링 Beans, 의존성 주입 등&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Spring Boot Features&lt;/strong&gt;&lt;br /&gt;
+Profiles, Logging, Security, Caching, Spring Integration, Testing, and more.&lt;br /&gt;
+프로파일, 로깅, 보안, 캐싱, 스프링 통합, 테스팅 등&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Spring Boot Actuator&lt;/strong&gt;&lt;br /&gt;
+Monitoring, Metrics, Auditing, and more.&lt;br /&gt;
+모니터링, Metrics, Auditing 등&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Deploying Spring Boot Applications&lt;/strong&gt;&lt;br /&gt;
+Deploying to the Cloud, Installing as a Unix application.&lt;br /&gt;
+클라우드로 배포, 유닉스 어플리케이션으로 설치&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Spring Boot CLI&lt;/strong&gt;&lt;br /&gt;
+Installing the CLI, Using the CLI, Configuring the CLI, and more.&lt;br /&gt;
+CLI 설치, CLI 사용, CLI 구성 등&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Build Tool Plugins&lt;/strong&gt;&lt;br /&gt;
+Maven Plugin, Gradle Plugin, Antlib, and more.&lt;br /&gt;
+Maven 플러그인, Gradle 플러그인, Antlib 등&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;“How-to” Guides&lt;/strong&gt;&lt;br /&gt;
+Application Development, Configuration, Embedded Servers, Data Access, and many more.&lt;br /&gt;
+어플리케이션 배포, 구성, 내장 서버, 데이터 접근 등&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The reference documentation has the following appendices:&lt;br /&gt;
+이 문서에는 다음과 같은 부록이 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Application Properties&lt;/strong&gt;&lt;br /&gt;
+Common application properties that can be used to configure your application.&lt;br /&gt;
+어플리케이션을 구성하는데 사용할 수 있는 공통 속성&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Configuration Metadata&lt;/strong&gt;&lt;br /&gt;
+Metadata used to describe configuration properties.&lt;br /&gt;
+구성 속성을 설명하는데 사용하는 메타데이터&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Auto-configuration Classes&lt;/strong&gt;&lt;br /&gt;
+Auto-configuration classes provided by Spring Boot.&lt;br /&gt;
+스프링 부트에서 제공하는 Auto-configuration classes&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Test Auto-configuration Annotations&lt;/strong&gt;&lt;br /&gt;
+Test-autoconfiguration annotations used to test slices of your application.&lt;br /&gt;
+단위 테스트를 위해 사용하는 Test-autoconfiguration 어노테이션&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Executable Jars&lt;/strong&gt;&lt;br /&gt;
+Spring Boot’s executable jars, their launchers, and their format.&lt;br /&gt;
+스프링 부트의 실행가능한 jar, launchers, 포맷&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dependency Versions&lt;/strong&gt;&lt;br /&gt;
+Details of the dependencies that are managed by Spring Boot.&lt;br /&gt;
+스트링 부트가 관리하는 의존성의 세부 정보&lt;/p&gt;</content>
 
       
       
