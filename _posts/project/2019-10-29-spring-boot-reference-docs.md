@@ -35,7 +35,7 @@ About the Documentation, Getting Help, First Steps, and more.
 Introducing Spring Boot, System Requirements, Servlet Containers, Installing Spring Boot, Developing Your First Spring Boot Application  
 스프링 부트 소개, 시스템 요구사항, 서블릿 컨테이너, 스프링 부트 설치, 첫번째 스프링 부트 어플리케이션 개발
 
-**Using Spring Boot**  
+**[Using Spring Boot](https://github.com/disj11/spring-boot-reference/blob/master/Using_Spring_Boot.md)**  
 Build Systems, Structuring Your Code, Configuration, Spring Beans and Dependency Injection, and more.  
 빌드 시스템, 코드 구조, 구성, 스프링 Beans, 의존성 주입 등
 
