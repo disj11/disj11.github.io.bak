@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-10-31T02:33:37+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">스프링 부트 문서 번역 (Spring Boot Reference Documentation)</title><link href="https://disj11.github.io/spring-boot-reference-docs" rel="alternate" type="text/html" title="스프링 부트 문서 번역 (Spring Boot Reference Documentation)" /><published>2019-10-29T20:48:00+00:00</published><updated>2019-10-29T20:48:00+00:00</updated><id>https://disj11.github.io/spring-boot-reference-docs</id><content type="html" xml:base="https://disj11.github.io/spring-boot-reference-docs">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-11-11T05:59:30+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">스프링 부트 문서 번역 (Spring Boot Reference Documentation)</title><link href="https://disj11.github.io/spring-boot-reference-docs" rel="alternate" type="text/html" title="스프링 부트 문서 번역 (Spring Boot Reference Documentation)" /><published>2019-10-29T20:48:00+00:00</published><updated>2019-10-29T20:48:00+00:00</updated><id>https://disj11.github.io/spring-boot-reference-docs</id><content type="html" xml:base="https://disj11.github.io/spring-boot-reference-docs">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
 &lt;p&gt;영어 공부를 위하여 &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/2.2.0.RELEASE/reference/html/index.html&quot;&gt;Spring Boot Reference Documentation&lt;/a&gt;
 를 번역한 프로젝트입니다. 차근차근 진행할 예정입니다.&lt;/p&gt;
 
@@ -23,7 +23,7 @@ About the Documentation, Getting Help, First Steps, and more.&lt;br /&gt;
 Introducing Spring Boot, System Requirements, Servlet Containers, Installing Spring Boot, Developing Your First Spring Boot Application&lt;br /&gt;
 스프링 부트 소개, 시스템 요구사항, 서블릿 컨테이너, 스프링 부트 설치, 첫번째 스프링 부트 어플리케이션 개발&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Using Spring Boot&lt;/strong&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/disj11/spring-boot-reference/blob/master/Using_Spring_Boot.md&quot;&gt;Using Spring Boot&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
 Build Systems, Structuring Your Code, Configuration, Spring Beans and Dependency Injection, and more.&lt;br /&gt;
 빌드 시스템, 코드 구조, 구성, 스프링 Beans, 의존성 주입 등&lt;/p&gt;
 
