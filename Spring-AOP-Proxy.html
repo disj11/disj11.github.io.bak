@@ -11,7 +11,7 @@
 
 
 
-    <title>Bit Masking (비트마스킹)</title>
+    <title>Spring AOP, Proxy</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,30 +36,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="Record my life" />
     <link rel="shortcut icon" href="https://disj11.github.io/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://disj11.github.io/bitmasking" />
+    <link rel="canonical" href="https://disj11.github.io/Spring-AOP-Proxy" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Life Log" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Bit Masking (비트마스킹)" />
-    <meta property="og:description" content="소개 비트는 0, 1의 값을 가질 수 있는 데이터의 최소 단위이다. 비트 마스크는 이러한 비트에 마스크를 씌워 비트의 값에 변화를 주는 행위이다. 이 설명으로는 비트마스킹이 무엇인지 표현이 잘 안되는데, 아래에서 상세히 다뤄보자. AND 연산 AND 연산은 비트의 값과 마스크의 값이 모두 1일 때에는 1, 그 외의 경우는 0이 된다. VALUE" />
-    <meta property="og:url" content="https://disj11.github.io/bitmasking" />
+    <meta property="og:title" content="Spring AOP, Proxy" />
+    <meta property="og:description" content="Spring AOP (Aspect Oriented Programming) AOP(관점 지향 프로그래밍)는 문제를 해결하기 위한 관심 사항을 핵심 기능과, 공통 부분(Aspect)으로 나누어 공통적인 부분을 각각의 모듈로 만들어 활용하겠다는 것이다. 스프링에서 사용하는 어노테이션인 @Transaction, @Async, @Cacheable 등은 모두 이러한 AOP를 이용한 것이다. 이해를 돕기위해 코드를 준비했다. 아래의 코드는 모든 메서드들의 실행 시간을 측정하기 위한 코드이다." />
+    <meta property="og:url" content="https://disj11.github.io/Spring-AOP-Proxy" />
     <meta property="og:image" content="https://disj11.github.io/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2019-06-01T10:47:00+00:00" />
-    <meta property="article:modified_time" content="2019-06-01T10:47:00+00:00" />
-    <meta property="article:tag" content="Data Structure" />
+    <meta property="article:published_time" content="2019-11-15T12:40:00+00:00" />
+    <meta property="article:modified_time" content="2019-11-15T12:40:00+00:00" />
+    <meta property="article:tag" content="Spring" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Bit Masking (비트마스킹)" />
-    <meta name="twitter:description" content="소개 비트는 0, 1의 값을 가질 수 있는 데이터의 최소 단위이다. 비트 마스크는 이러한 비트에 마스크를 씌워 비트의 값에 변화를 주는 행위이다. 이 설명으로는 비트마스킹이 무엇인지 표현이 잘 안되는데, 아래에서 상세히 다뤄보자. AND 연산 AND 연산은 비트의 값과 마스크의 값이 모두 1일 때에는 1, 그 외의 경우는 0이 된다. VALUE" />
+    <meta name="twitter:title" content="Spring AOP, Proxy" />
+    <meta name="twitter:description" content="Spring AOP (Aspect Oriented Programming) AOP(관점 지향 프로그래밍)는 문제를 해결하기 위한 관심 사항을 핵심 기능과, 공통 부분(Aspect)으로 나누어 공통적인 부분을 각각의 모듈로 만들어 활용하겠다는 것이다. 스프링에서 사용하는 어노테이션인 @Transaction, @Async, @Cacheable 등은 모두 이러한 AOP를 이용한 것이다. 이해를 돕기위해 코드를 준비했다. 아래의 코드는 모든 메서드들의 실행 시간을 측정하기 위한 코드이다." />
     <meta name="twitter:url" content="https://disj11.github.io/" />
     <meta name="twitter:image" content="https://disj11.github.io/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Life Log" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Data Structure" />
+    <meta name="twitter:data2" content="Spring" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -74,7 +74,7 @@
         "name": "Life Log",
         "logo": "https://disj11.github.io/"
     },
-    "url": "https://disj11.github.io/bitmasking",
+    "url": "https://disj11.github.io/Spring-AOP-Proxy",
     "image": {
         "@type": "ImageObject",
         "url": "https://disj11.github.io/assets/images/blog-cover.jpg",
@@ -83,9 +83,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://disj11.github.io/bitmasking"
+        "@id": "https://disj11.github.io/Spring-AOP-Proxy"
     },
-    "description": "소개 비트는 0, 1의 값을 가질 수 있는 데이터의 최소 단위이다. 비트 마스크는 이러한 비트에 마스크를 씌워 비트의 값에 변화를 주는 행위이다. 이 설명으로는 비트마스킹이 무엇인지 표현이 잘 안되는데, 아래에서 상세히 다뤄보자. AND 연산 AND 연산은 비트의 값과 마스크의 값이 모두 1일 때에는 1, 그 외의 경우는 0이 된다. VALUE"
+    "description": "Spring AOP (Aspect Oriented Programming) AOP(관점 지향 프로그래밍)는 문제를 해결하기 위한 관심 사항을 핵심 기능과, 공통 부분(Aspect)으로 나누어 공통적인 부분을 각각의 모듈로 만들어 활용하겠다는 것이다. 스프링에서 사용하는 어노테이션인 @Transaction, @Async, @Cacheable 등은 모두 이러한 AOP를 이용한 것이다. 이해를 돕기위해 코드를 준비했다. 아래의 코드는 모든 메서드들의 실행 시간을 측정하기 위한 코드이다."
 }
     </script>
 
@@ -98,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Bit Masking (비트마스킹)" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Spring AOP, Proxy" href="/feed.xml" />
     <style>
         .highlighter-rouge, .highlight, code {
             width: 100%;
@@ -159,104 +159,87 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 1 June 2019"> 1 June 2019</time>
+                    <time class="post-full-meta-date" datetime="15 November 2019">15 November 2019</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/data-structure/'>DATA STRUCTURE</a>,
+                               <a href='/tag/spring/'>SPRING</a>,
                             
                         
                             
-                               <a href='/tag/bit-masking/'>BIT MASKING</a>
+                               <a href='/tag/aop/'>AOP</a>,
+                            
+                        
+                            
+                               <a href='/tag/proxy/'>PROXY</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Bit Masking (비트마스킹)</h1>
+                <h1 class="post-full-title">Spring AOP, Proxy</h1>
             </header>
 
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h3 id="소개">소개</h3>
-<blockquote>
-  <p>비트는 0, 1의 값을 가질 수 있는 데이터의 최소 단위이다.
-비트 마스크는 이러한 비트에 마스크를 씌워 비트의 값에 변화를 주는 행위이다.
-이 설명으로는 비트마스킹이 무엇인지 표현이 잘 안되는데, 아래에서 상세히 다뤄보자.</p>
-</blockquote>
+                    <h2 id="spring-aop-aspect-oriented-programming">Spring AOP (Aspect Oriented Programming)</h2>
+<p>AOP(관점 지향 프로그래밍)는 문제를 해결하기 위한 관심 사항을 핵심 기능과, 공통 부분(Aspect)으로 나누어
+공통적인 부분을 각각의 모듈로 만들어 활용하겠다는 것이다. 
+스프링에서 사용하는 어노테이션인 <code class="highlighter-rouge">@Transaction</code>, <code class="highlighter-rouge">@Async</code>, <code class="highlighter-rouge">@Cacheable</code> 등은 모두 이러한 AOP를 이용한 것이다.</p>
 
-<h3 id="and-연산">AND 연산</h3>
-<blockquote>
-  <p>AND 연산은 비트의 값과 마스크의 값이 모두 1일 때에는 1, 그 외의 경우는 0이 된다.</p>
-</blockquote>
+<p>이해를 돕기위해 코드를 준비했다.
+아래의 코드는 모든 메서드들의 실행 시간을 측정하기 위한 코드이다.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>VALUE</td>
-      <td>0000 0101</td>
-    </tr>
-    <tr>
-      <td>MASK</td>
-      <td>0000 1111</td>
-    </tr>
-    <tr>
-      <td>RESULT</td>
-      <td>0000 0101</td>
-    </tr>
-  </tbody>
-</table>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public void doSomething() {
+    // 시작 시간 체크 (메서드 실행시간 체크를 위한 공통 부분)
+    
+    // 핵심 기능 (비지니스 로직)
+    
+    // 끝나는 시간 체크 (메서드 실행시간 체크를 위한 공통 부분)
+    // 실행 시간 체크 (메서드 실행시간 체크를 위한 공통 부분)
+}
+</code></pre></div></div>
 
-<h3 id="or-연산">OR 연산</h3>
-<blockquote>
-  <p>OR 연산은 비트의 값과 마스크의 값중 하나라도 1일 때에는 1, 모두 0일 때에는 0이 된다.</p>
-</blockquote>
+<p>우리가 모든 메서드들의 실행시간을 알고 싶다고 한다면,
+실제로 메서드가 하는 일인 핵심 기능과, 메서드 실행 시간을 구하기 위한 공통 부분으로 나눌 수 있을 것이다.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>VALUE</td>
-      <td>0000 0101</td>
-    </tr>
-    <tr>
-      <td>MASK</td>
-      <td>0000 1111</td>
-    </tr>
-    <tr>
-      <td>RESULT</td>
-      <td>0000 1111</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="xor-연산">XOR 연산</h3>
-<blockquote>
-  <p>XOR 연산은 비트의 값과 마스크의 값이 값으면 0, 다르면 1이 된다.</p>
-</blockquote>
-
-<h3 id="자주-사용하는-연산">자주 사용하는 연산</h3>
+<p>위의 코드의 경우,</p>
 <ol>
-  <li>k번 비트가 1인지 0인지 확인 <br />
-<code class="highlighter-rouge">status &amp; (1 &lt;&lt; k)</code></li>
-  <li>k번 비트를 1로 만들고 싶다. <br />
-<code class="highlighter-rouge">status = status | (1 &lt;&lt; k)</code> or <code class="highlighter-rouge">status |= (1 &lt;&lt; k)</code></li>
-  <li>k번 비트를 0으로 만들고 싶다. <br />
-<code class="highlighter-rouge">status = status &amp; ~(1&lt;&lt;k)</code> or <code class="highlighter-rouge">status &amp;= ~(1&lt;&lt;k)</code></li>
+  <li>메서드가 실행되기 시작한 시간 구하기</li>
+  <li>메서드 핵심 기능 실행</li>
+  <li>메서드가 완료된 시간 구하기</li>
+  <li>메서드 실행이 완료된 시간 구하기</li>
+  <li>메서드 실행시간 구하기 (메서드 실행이 완료된 시간 - 메서드가 실행된 시간)</li>
 </ol>
 
-<p>위의 내용을 모두 읽어도 1~3번 이해가 안 간다면,
-비트 NOT 연산, 비트 시프트 연산에 대하여 찾아보면 좋다.</p>
+<p>1, 2, 4, 5 번이 실행 시간을 구하기 위해 모든 메서드에 들어가야 하는 공통 부분이고,
+3번은 메서드마다 구현이 달라지는 핵심 부분일 것이다.
+우리는 이렇게 핵심 부분과 공통 부분을 나누고, 공통적인 부분을 모듈로 만드는 것을 AOP 라고 한다.</p>
 
-<h3 id="참고">참고</h3>
-<p>JAVA의 경우는 EnumSet이라고 하는 데이터 타입을 제공하여,
-특별한 경우가 아니라면 비트 연산을 사용하는 경우가 드물다.
-EnumSet의 자세한 정보가 궁금하다면, <a href="https://www.baeldung.com/java-enumset">https://www.baeldung.com/java-enumset</a>
-사이트를 참고하면 된다.</p>
+<h2 id="proxy">Proxy</h2>
+<p>스프링 AOP는 프록시를 이용하여 AOP를 구현하기 때문에, Proxy에 관해서 알아야 한다.
+스프링은 공통 부분(Aspect) 적용 대상이 되는 객체에 대한 프록시를 만들어서 제공한다.
+비지니스 로직에 접근을 할 때에는 이렇게 만들어진 프록시를 통해 간접적으로 접근하게 된다.</p>
 
-<p>[참고 사이트] <br />
-<a href="https://kks227.blog.me/" target="_blank">https://kks227.blog.me/</a></p>
+<p>예를들어 Controller 에서 어떤 서비스의 doSomething() 메서드를 실행한 경우,
+스프링은 프록시 객체를 생성하고, 생성된 프록시에서 공통 기능을 실행 후 doSomething() 메서드를 호출하거나,
+service.doSomething() 메서드 실행 후 공통 기능을 실행한다.</p>
+
+<p>이러한 프록시를 생성하기 위한 방법으로는 JDK Dynamic Proxy와 CGLIB을 이용하는 두 가지 방식이 있다.
+지금부터 두 방식의 차이점을 알아보자.</p>
+
+<h2 id="jdk-dynamic-proxy">JDK Dynamic Proxy</h2>
+<p>자바 리플렉션 API가 제공하는 <code class="highlighter-rouge">java.lang.reflect.Proxy</code>를 사용하여 프록시 객체를 생성한다.
+이 방식은 인터페이스를 기반으로 프록시 객체를 생성하기 때문에 <strong>인터페이스에 정의되어 있지 않은 메서드는 AOP가 적용되지 않는다.</strong></p>
+
+<h2 id="cglib">CGLIB</h2>
+<p>CGLIB는 인터페이스에 정의되어 있지 않더라도 프록시 객체를 생성할 수 있다.
+하지만, CGLIB는 대상 클래스를 상속받아 프록시를 구현하기 때문에, <strong>클래스가 final인 경우에는 프록시를 생성할 수 없다.</strong></p>
+
+<h2 id="spring-aop-주의사항">Spring AOP 주의사항</h2>
+<p><strong>같은 클래스 내에 있는 메서드를 호출하는 경우</strong> 프록시를 거쳐가지 않기 때문에, <strong>AOP가 적용되지 않는다.</strong></p>
 
                 </div>
             </section>
@@ -330,7 +313,7 @@ EnumSet의 자세한 정보가 궁금하다면, <a href="https://www.baeldung.co
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; Life Log &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/data-structure/">Data structure</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/spring/">Spring</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -340,17 +323,6 @@ EnumSet의 자세한 정보가 궁금하다면, <a href="https://www.baeldung.co
                                 
                                 
                                   
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/trie">Trie (트라이)</a></li>
-                                        
                                     
                                   
                                 
@@ -369,22 +341,26 @@ EnumSet의 자세한 정보가 궁금하다면, <a href="https://www.baeldung.co
                                   
                                 
                                   
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
                                     
                                         
                                         
-                                            <li><a href="/union-find">Union-Find (유니온 파인드)</a></li>
+                                            <li><a href="/server-sent-events">SSE (Server-Sent Events)</a></li>
                                         
                                     
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                  
-                                
-                                  
-                                
                                   
                                 
                                   
@@ -394,9 +370,9 @@ EnumSet의 자세한 정보가 궁금하다면, <a href="https://www.baeldung.co
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/data-structure/">
+                            <a href="/tag/spring/">
                                 
-                                    See all 2 posts  →
+                                    See all 1 posts  →
                                 
                             </a>
                         </footer>
@@ -406,59 +382,6 @@ EnumSet의 자세한 정보가 궁금하다면, <a href="https://www.baeldung.co
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
-
-    <article class="post-card post-template no-image">
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/baekjoon-1327">
-                <header class="post-card-header">
-                    
-                        
-                            
-                               <span class="post-card-tags">Algorithm</span>
-                            
-                        
-                            
-                               <span class="post-card-tags">Baekjoon</span>
-                            
-                        
-                            
-                                <span class="post-card-tags">Bsf</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">백준 1327번 (소트 게임)</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/images/ghost.png" alt="Saturday" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/saturday/">Saturday</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -467,17 +390,17 @@ EnumSet의 자세한 정보가 궁금하다면, <a href="https://www.baeldung.co
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/inverted-index">
+            <a class="post-card-content-link" href="/spring-boot-reference-docs">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Database</span>
+                                <span class="post-card-tags">Toy project</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Inverted index (역색인)</h2>
+                    <h2 class="post-card-title">스프링 부트 문서 번역 (Spring Boot Reference Documentation)</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -521,18 +444,18 @@ EnumSet의 자세한 정보가 궁금하다면, <a href="https://www.baeldung.co
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Bit Masking (비트마스킹)</div>
+    <div class="floating-header-title">Spring AOP, Proxy</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Bit+Masking+%28%EB%B9%84%ED%8A%B8%EB%A7%88%EC%8A%A4%ED%82%B9%29&amp;url=https://disj11.github.io/bitmasking"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Spring+AOP%2C+Proxy&amp;url=https://disj11.github.io/Spring-AOP-Proxy"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://disj11.github.io/bitmasking"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://disj11.github.io/Spring-AOP-Proxy"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
