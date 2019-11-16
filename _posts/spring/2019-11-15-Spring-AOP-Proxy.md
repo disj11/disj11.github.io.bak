@@ -2,7 +2,7 @@
 layout: post
 current: post
 navigation: True
-title: Spring AOP, Proxy
+title: Spring AOP, Proxy (관점 지향 프로그래밍과 프록시)
 date: 2019-11-15 12:40
 tags: [Spring, AOP, Proxy]
 class: post-template
@@ -10,7 +10,7 @@ subclass: 'post'
 author: saturday
 ---
 
-## Spring AOP (Aspect Oriented Programming)
+### Spring AOP (Aspect Oriented Programming)
 AOP(관점 지향 프로그래밍)는 문제를 해결하기 위한 관심 사항을 핵심 기능과, 공통 부분(Aspect)으로 나누어
 공통적인 부분을 각각의 모듈로 만들어 활용하겠다는 것이다. 
 스프링에서 사용하는 어노테이션인 `@Transaction`, `@Async`, `@Cacheable` 등은 모두 이러한 AOP를 이용한 것이다.
@@ -43,25 +43,25 @@ public void doSomething() {
 3번은 메서드마다 구현이 달라지는 핵심 부분일 것이다.
 우리는 이렇게 핵심 부분과 공통 부분을 나누고, 공통적인 부분을 모듈로 만드는 것을 AOP 라고 한다.
 
-## Proxy
+### Proxy
 스프링 AOP는 프록시를 이용하여 AOP를 구현하기 때문에, Proxy에 관해서 알아야 한다.
 스프링은 공통 부분(Aspect) 적용 대상이 되는 객체에 대한 프록시를 만들어서 제공한다.
 비지니스 로직에 접근을 할 때에는 이렇게 만들어진 프록시를 통해 간접적으로 접근하게 된다.
 
 예를들어 Controller 에서 어떤 서비스의 doSomething() 메서드를 실행한 경우,
 스프링은 프록시 객체를 생성하고, 생성된 프록시에서 공통 기능을 실행 후 doSomething() 메서드를 호출하거나,
-service.doSomething() 메서드 실행 후 공통 기능을 실행한다.
+doSomething() 메서드 실행 후 공통 기능을 실행한다.
 
 이러한 프록시를 생성하기 위한 방법으로는 JDK Dynamic Proxy와 CGLIB을 이용하는 두 가지 방식이 있다.
 지금부터 두 방식의 차이점을 알아보자.
 
-## JDK Dynamic Proxy
+### JDK Dynamic Proxy
 자바 리플렉션 API가 제공하는 `java.lang.reflect.Proxy`를 사용하여 프록시 객체를 생성한다.
 이 방식은 인터페이스를 기반으로 프록시 객체를 생성하기 때문에 **인터페이스에 정의되어 있지 않은 메서드는 AOP가 적용되지 않는다.**
 
-## CGLIB
+### CGLIB
 CGLIB는 인터페이스에 정의되어 있지 않더라도 프록시 객체를 생성할 수 있다.
 하지만, CGLIB는 대상 클래스를 상속받아 프록시를 구현하기 때문에, **클래스가 final인 경우에는 프록시를 생성할 수 없다.**
 
-## Spring AOP 주의사항
+### Spring AOP 주의사항
 **같은 클래스 내에 있는 메서드를 호출하는 경우** 프록시를 거쳐가지 않기 때문에, **AOP가 적용되지 않는다.**

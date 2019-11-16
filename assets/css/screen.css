@@ -804,8 +804,8 @@ Usage (In Ghost editor):
 }
 
 .post-full-content blockquote {
-    margin: 0 0 1.5em;
-    padding: 0 1.5em;
+    margin: 0.5em 0 1.5em;
+    padding: 0 1em;
     border-left: #3eb0ef 3px solid;
 }
 
@@ -814,7 +814,6 @@ Usage (In Ghost editor):
     color: inherit;
     font-size: inherit;
     line-height: inherit;
-    font-style: italic;
 }
 
 .post-full-content blockquote p:last-child {
