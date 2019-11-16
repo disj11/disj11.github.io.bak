@@ -8,9 +8,27 @@
     
       
       <item>
-        <title>Spring AOP, Proxy</title>
+        <title>Isolation level (격리 수준)</title>
         
-          <description>&lt;h2 id=&quot;spring-aop-aspect-oriented-programming&quot;&gt;Spring AOP (Aspect Oriented Programming)&lt;/h2&gt;
+          <description>&lt;h3 id=&quot;isolation&quot;&gt;Isolation&lt;/h3&gt;
+&lt;p&gt;Isolation은 트랜잭션에서 일관성이 없는 데이터를 표시하는 방법입니다.
+isolation level(격리 수준)이 낮을수록 많은 사용자가 동일한 데이터에 동시에 접근할 수 있는 기능이 향상됩니다.
+그러나 이는 잘 못된 데이터를 읽거나 데이터의 업데이트가 손실되는 등과 같은 증상을 유발할 수 있습니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 16 Nov 2019 16:53:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/isolation-level</link>
+        <guid isPermaLink="true">https://disj11.github.io/isolation-level</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Spring AOP, Proxy (관점 지향 프로그래밍과 프록시)</title>
+        
+          <description>&lt;h3 id=&quot;spring-aop-aspect-oriented-programming&quot;&gt;Spring AOP (Aspect Oriented Programming)&lt;/h3&gt;
 &lt;p&gt;AOP(관점 지향 프로그래밍)는 문제를 해결하기 위한 관심 사항을 핵심 기능과, 공통 부분(Aspect)으로 나누어
 공통적인 부분을 각각의 모듈로 만들어 활용하겠다는 것이다. 
 스프링에서 사용하는 어노테이션인 &lt;code class=&quot;highlighter-rouge&quot;&gt;@Transaction&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;@Async&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;@Cacheable&lt;/code&gt; 등은 모두 이러한 AOP를 이용한 것이다.&lt;/p&gt;

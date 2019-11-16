@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://disj11.github.io/tag/isolation/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
+  <updated>2019-11-16T07:56:51+00:00</updated>
+  <id>https://disj11.github.io/tag/isolation/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Life Log | </title>
+  
+
+  
+    <subtitle>Record my life</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Isolation level (격리 수준)</title>
+      <link href="https://disj11.github.io/isolation-level" rel="alternate" type="text/html" title="Isolation level (격리 수준)" />
+      <published>2019-11-16T16:53:00+00:00</published>
+      <updated>2019-11-16T16:53:00+00:00</updated>
+      <id>https://disj11.github.io/isolation-level</id>
+      <content type="html" xml:base="https://disj11.github.io/isolation-level">&lt;h3 id=&quot;isolation&quot;&gt;Isolation&lt;/h3&gt;
+&lt;p&gt;Isolation은 트랜잭션에서 일관성이 없는 데이터를 표시하는 방법입니다.
+isolation level(격리 수준)이 낮을수록 많은 사용자가 동일한 데이터에 동시에 접근할 수 있는 기능이 향상됩니다.
+그러나 이는 잘 못된 데이터를 읽거나 데이터의 업데이트가 손실되는 등과 같은 증상을 유발할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;반대로 isolation level이 높을수록 문제가 발생할 확률은 줄어들지만, 동일한 데이터에 동시에 접근할 수 있는 기능은 떨어집니다.
+따라서 데이터베이스 시스템은 보통 네 종류의 isolation level을 정의하고, 알맞은 격리 수준을 선택할 수 있도록 하였습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;용어-정리&quot;&gt;용어 정리&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dirty Read&lt;br /&gt;
+커밋되지 않은 데이터를 읽을 수 있을 때 발생합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Transaction 1&lt;/th&gt;
+      &lt;th&gt;Transaction 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT age FROM users WHERE id = 1;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;위 쿼리로 20의 값이 읽어짐&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;UPDATE users SET age = 21 WHERE id = 1;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;나이를 21로 바꾸고 커밋은 하지 않음&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT age FROM users WHERE id = 1;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;다시 나이를 읽으면 21살로 읽어짐&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ROLLBACK;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Dirty Read 발생&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Non-Repeatable Read&lt;br /&gt;
+Transaction1 이 진행되는 동안 두 번 이상의 조회가 발생하고,
+그 사이에 Transaction2 에서 데이터의 값을 변경하면 발생합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Transaction 1&lt;/th&gt;
+      &lt;th&gt;Transaction 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT * FROM users WHERE id = 1;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;UPDATE users SET age = 21 WHERE id = 1;&lt;/code&gt;&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COMMIT;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;나이를 21로 바꾸고 커밋&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT * FROM users WHERE id = 1;&lt;/code&gt;&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COMMIT;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;트랜잭션 진행중 조회 결과가 다르게 나옴&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Phantom Read&lt;br /&gt;
+트랜잭션 과정에서, 다른 트랜잭션에서 읽은 레코드에 새로운 행이 추가되거나 제거될 때 발생합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Transaction 1&lt;/th&gt;
+      &lt;th&gt;Transaction 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT * FROM users WHERE age BETWEEN 10 AND 30;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10 ~ 30살 사이의 사용자 검색&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;INSERT INTO users(id,name,age) VALUES ( 3, 'Bob', 27 );&lt;/code&gt;&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COMMIT;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;27살 사용자 추가&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT * FROM users WHERE age BETWEEN 10 AND 30;&lt;/code&gt;&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COMMIT;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Transaction2 에서 추가된 사용자가 같이 나옴.&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;isolation-level&quot;&gt;Isolation Level&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;READ UNCOMMITTED&lt;br /&gt;
+가장 낮은 레벨의 격리 수준으로 커밋하지 않은 데이터를 다른 트랜잭션에서 조회할 수 있습니다.
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: Dirty Read, Non-Repeatable Read, Phantom Read 가 발생할 수 있습니다.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;READ COMMITTED
+커밋 완료된 데이터만 다른 트랜잭션에서 조회할 수 있습니다.
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: Non-Repeatable Read, Phantom Read 가 발생할 수 있습니다.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;REPEATABLE READ
+트랜잭션 내에서 한번 조회한 데이터는 항상 같은 값으로 조회되는 격리 수준입니다.
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: Phantom Read 가 발생할 수 있습니다.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SERIALIZABLE
+가장 높은 레벨의 격리 수준으로 위에서 알아본 Dirty Read, Non-Repeatable Read, Phantom Read 이 모두 발생하지 않습니다.
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: 이 수준의 격리 레벨은 동시성 처리 성능이 현저히 떨어집니다.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Isolation Level&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Dirty reads&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Non-repeatable reads&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Phantoms&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;READ COMMITTED&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;V&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;V&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;V&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;READ COMMITTED&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;V&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;V&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;REPEATABLE READ&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;V&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;RSERIALIZABLE&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Saturday</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Database" />
+      
+        <category term="Isolation" />
+      
+
+      
+        <summary type="html">Isolation Isolation은 트랜잭션에서 일관성이 없는 데이터를 표시하는 방법입니다. isolation level(격리 수준)이 낮을수록 많은 사용자가 동일한 데이터에 동시에 접근할 수 있는 기능이 향상됩니다. 그러나 이는 잘 못된 데이터를 읽거나 데이터의 업데이트가 손실되는 등과 같은 증상을 유발할 수 있습니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
