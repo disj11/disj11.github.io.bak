@@ -31,12 +31,9 @@ into the {body} of the default.hbs template -->
     <div class="inner">
 
         <div class="post-feed">
-            <div id="search-hits"></div>
-            <div id="posts">
-                <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-                {%  include post-card.html %}
-            </div>
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
         </div>
-        {% include algolia.html %}
+
     </div>
 </main>
