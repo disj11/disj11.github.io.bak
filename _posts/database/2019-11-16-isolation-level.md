@@ -80,4 +80,4 @@ Transaction1 이 진행되는 동안 두 번 이상의 조회가 발생하고,
 |READ COMMITTED|V|V|V|
 |READ COMMITTED||V|V|
 |REPEATABLE READ|||V|
-|RSERIALIZABLE||||
+|SERIALIZABLE||||
