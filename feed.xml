@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-11-16T07:56:51+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Isolation level (격리 수준)</title><link href="https://disj11.github.io/isolation-level" rel="alternate" type="text/html" title="Isolation level (격리 수준)" /><published>2019-11-16T16:53:00+00:00</published><updated>2019-11-16T16:53:00+00:00</updated><id>https://disj11.github.io/isolation-level</id><content type="html" xml:base="https://disj11.github.io/isolation-level">&lt;h3 id=&quot;isolation&quot;&gt;Isolation&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2019-11-18T02:40:52+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Isolation level (격리 수준)</title><link href="https://disj11.github.io/isolation-level" rel="alternate" type="text/html" title="Isolation level (격리 수준)" /><published>2019-11-16T16:53:00+00:00</published><updated>2019-11-16T16:53:00+00:00</updated><id>https://disj11.github.io/isolation-level</id><content type="html" xml:base="https://disj11.github.io/isolation-level">&lt;h3 id=&quot;isolation&quot;&gt;Isolation&lt;/h3&gt;
 &lt;p&gt;Isolation은 트랜잭션에서 일관성이 없는 데이터를 표시하는 방법입니다.
 isolation level(격리 수준)이 낮을수록 많은 사용자가 동일한 데이터에 동시에 접근할 수 있는 기능이 향상됩니다.
 그러나 이는 잘 못된 데이터를 읽거나 데이터의 업데이트가 손실되는 등과 같은 증상을 유발할 수 있습니다.&lt;/p&gt;
@@ -189,7 +189,7 @@ Transaction1 이 진행되는 동안 두 번 이상의 조회가 발생하고,
       &lt;td style=&quot;text-align: center&quot;&gt;V&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;RSERIALIZABLE&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;SERIALIZABLE&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;

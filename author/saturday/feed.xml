@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/author/saturday/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2019-11-16T07:56:51+00:00</updated>
+  <updated>2019-11-18T02:40:52+00:00</updated>
   <id>https://disj11.github.io/author/saturday/feed.xml</id>
 
   
@@ -228,7 +228,7 @@ Transaction1 이 진행되는 동안 두 번 이상의 조회가 발생하고,
       &lt;td style=&quot;text-align: center&quot;&gt;V&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;RSERIALIZABLE&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;SERIALIZABLE&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
