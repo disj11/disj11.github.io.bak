@@ -79,6 +79,13 @@ destination: ./_site/
 production_url:  https://disj11.github.io/
 source_url:  https://github.com/disj11/disj11.github.io/
 
+algolia:
+  application_id: YMPF5G8F6D
+  index_name: disj11.github.io
+  search_only_api_key: 5a9c4b6c8e468143fe91e02afc29f093
+  highlightPreTag: '<em class="ais-match-highlight">'
+  highlightPostTag: '</em>'
+
 exclude:
   - assets/css
   - node_modules
