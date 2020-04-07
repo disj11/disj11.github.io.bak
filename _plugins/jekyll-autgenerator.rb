@@ -14,7 +14,7 @@ module Jekyll
     def build_subpages(site, type, posts)
       posts[1] = posts[1].sort_by { |p| -p.date.to_f }
       atomize(site, type, posts)
-      paginate(site, type, posts)
+      # paginate(site, type, posts)
     end
 
     def atomize(site, type, posts)
@@ -24,7 +24,7 @@ module Jekyll
     end
 
     def paginate(site, type, posts)
-      pages = Jekyll::Paginate::Pager.calculate_pages(posts[1], 15)
+      pages = Jekyll::Paginate::Pager.calculate_pages(posts[1], site.config['paginate'].to_i)
       (1..pages).each do |num_page|
         pager = Jekyll::Paginate::Pager.new(site, num_page, posts[1], pages)
         path = "/author/#{posts[0]}"
