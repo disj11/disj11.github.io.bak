@@ -2,6 +2,7 @@
 markdown: kramdown
 highlighter: rouge
 paginate: 15 # it will paginate after this number
+per_page: 15 # it will paginate after this number
 language: 'ko-KR'
 words_per_minute: 200
 locale : "ko-KR"
