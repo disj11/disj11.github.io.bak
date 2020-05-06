@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://disj11.github.io/tag/image/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
+  <updated>2020-05-06T12:43:56+00:00</updated>
+  <id>https://disj11.github.io/tag/image/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Life Log | </title>
+  
+
+  
+    <subtitle>Record my life</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">자바 이미지 리사이징 후 색상이 변경되는 문제</title>
+      <link href="https://disj11.github.io/java-image-resize" rel="alternate" type="text/html" title="자바 이미지 리사이징 후 색상이 변경되는 문제" />
+      <published>2020-05-06T18:00:00+00:00</published>
+      <updated>2020-05-06T18:00:00+00:00</updated>
+      <id>https://disj11.github.io/java-image-resize</id>
+      <content type="html" xml:base="https://disj11.github.io/java-image-resize">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;java 에서 jpg 이미지를 리사이징 후 색상이 이상하게 변경되어 기록&lt;/p&gt;
+
+&lt;h3 id=&quot;내용&quot;&gt;내용&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;파일 업로드 중 업로드된 이미지의 색상 값이 이상하게 변경되는 것을 확인&lt;/li&gt;
+  &lt;li&gt;이미지 리사이징 로직을 제거하니 정상적으로 작동&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mvnrepository.com/artifact/org.openimaj/image-processing/1.3.10&quot;&gt;OpenIMAJ&lt;/a&gt; 를 사용했던 리사이징 로직을 &lt;a href=&quot;https://mvnrepository.com/artifact/net.coobird/thumbnailator/0.4.11&quot;&gt;Thumbnailator&lt;/a&gt; 를 사용하도록 변경&lt;/li&gt;
+  &lt;li&gt;문제가 해결되지 않음.&lt;/li&gt;
+  &lt;li&gt;확인 결과 리사이징 후 이미지에 alpha 채널이 추가되는 것을 확인함.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;처리&quot;&gt;처리&lt;/h3&gt;
+&lt;p&gt;알파 채널이 존재하는 경우 png 로 저장되도록 변경함.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// MultipartFile file
+String ext = FilenameUtils.getExtension(file.getOriginalFilename());
+
+// BufferedImage resizeImage
+if (resizeImage.getColorModel().hasAlpha()) {
+    ext = &quot;png&quot;;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;알파 채널이 존재하는 경우 알파 채널을 제거 후 jpg 로 저장하여도 됨&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if (resizeImage.getColorModel().hasAlpha()) {
+    resizeImage = dropAlphaChannel(resizeImage);
+}
+
+public BufferedImage dropAlphaChannel(BufferedImage src) {
+     BufferedImage convertedImg = new BufferedImage(src.getWidth(), src.getHeight(), BufferedImage.TYPE_INT_RGB);
+     convertedImg.getGraphics().drawImage(src, 0, 0, null);
+
+     return convertedImg;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;[참고 사이트] &lt;br /&gt;
+&lt;a href=&quot;https://github.com/rkalla/imgscalr/issues/82&quot; target=&quot;_blank&quot;&gt;https://github.com/rkalla/imgscalr/issues/82&lt;/a&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Saturday</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Java" />
+      
+        <category term="Image" />
+      
+
+      
+        <summary type="html">소개 java 에서 jpg 이미지를 리사이징 후 색상이 이상하게 변경되어 기록</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

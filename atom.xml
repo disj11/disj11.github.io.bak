@@ -8,6 +8,22 @@
     
       
       <item>
+        <title>자바 이미지 리사이징 후 색상이 변경되는 문제</title>
+        
+          <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;java 에서 jpg 이미지를 리사이징 후 색상이 이상하게 변경되어 기록&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 06 May 2020 18:00:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/java-image-resize</link>
+        <guid isPermaLink="true">https://disj11.github.io/java-image-resize</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Isolation level (격리 수준)</title>
         
           <description>&lt;h3 id=&quot;isolation&quot;&gt;Isolation&lt;/h3&gt;
