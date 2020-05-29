@@ -54,7 +54,7 @@
     <meta property="og:site_name" content="Life Log" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Intellij 에서 WSL 사용" />
-    <meta property="og:description" content="소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다. 방법 File - Settings - Tools - Terminal Shell path 에 아래 내용 입력 "C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run WSL 에 접속하여 ~/.profile 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가 PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH" 왜 수정이 필요한지는 https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504 참고 참고한 사이트" />
+    <meta property="og:description" content="소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다. 방법 File - Settings - Tools - Terminal Shell path 에 아래 내용 입력 "C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run WSL 에 접속하여 ~/.profile 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가 PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH" 왜 수정이 필요한지는 https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504 참고 노드를 사용하는" />
     <meta property="og:url" content="https://disj11.github.io/intellij-with-wsl" />
     <meta property="og:image" content="https://disj11.github.io/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -64,7 +64,7 @@
     <meta property="article:tag" content="Intellij" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Intellij 에서 WSL 사용" />
-    <meta name="twitter:description" content="소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다. 방법 File - Settings - Tools - Terminal Shell path 에 아래 내용 입력 "C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run WSL 에 접속하여 ~/.profile 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가 PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH" 왜 수정이 필요한지는 https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504 참고 참고한 사이트" />
+    <meta name="twitter:description" content="소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다. 방법 File - Settings - Tools - Terminal Shell path 에 아래 내용 입력 "C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run WSL 에 접속하여 ~/.profile 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가 PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH" 왜 수정이 필요한지는 https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504 참고 노드를 사용하는" />
     <meta name="twitter:url" content="https://disj11.github.io/" />
     <meta name="twitter:image" content="https://disj11.github.io/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -96,7 +96,7 @@
         "@type": "WebPage",
         "@id": "https://disj11.github.io/intellij-with-wsl"
     },
-    "description": "소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다. 방법 File - Settings - Tools - Terminal Shell path 에 아래 내용 입력 "C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run WSL 에 접속하여 ~/.profile 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가 PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH" 왜 수정이 필요한지는 https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504 참고 참고한 사이트"
+    "description": "소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다. 방법 File - Settings - Tools - Terminal Shell path 에 아래 내용 입력 "C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run WSL 에 접속하여 ~/.profile 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가 PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH" 왜 수정이 필요한지는 https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504 참고 노드를 사용하는"
 }
     </script>
 
@@ -206,16 +206,23 @@ WSL은 이미 설치되어 있다고 가정하였습니다.</p>
   <li>File - Settings - Tools - Terminal</li>
   <li>Shell path 에 아래 내용 입력<br />
 <code class="highlighter-rouge">"C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run</code></li>
-  <li>WSL 에 접속하여 <code class="highlighter-rouge">~/.profile</code> 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH"
-</code></pre></div>    </div>
-    <p>왜 수정이 필요한지는 <a href="https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504">https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504</a> 참고</p>
-  </li>
+  <li>WSL 에 접속하여 <code class="highlighter-rouge">~/.profile</code> 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가<br />
+<code class="highlighter-rouge">PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH"</code><br />
+왜 수정이 필요한지는 <a href="https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504">https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504</a> 참고</li>
+</ol>
+
+<h3 id="노드를-사용하는-경우">노드를 사용하는 경우</h3>
+<ol>
+  <li>File - Settings - Languages &amp; Frameworks - Node.js and npm</li>
+  <li>Node Interpreter에 Add WSL 선택</li>
+  <li>WSL에 설치한 노드 선택
+<img src="https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2018/06/select-wsl-in-preferences.png" alt="참고 이미지" /></li>
 </ol>
 
 <h3 id="참고한-사이트">참고한 사이트</h3>
 <p><a href="https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504">https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504</a>
-<a href="https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products">https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products</a></p>
+<a href="https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products">https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products</a>
+<a href="https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2018/06/select-wsl-in-preferences.png">https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2018/06/select-wsl-in-preferences.png</a></p>
 
                 </div>
             </section>
