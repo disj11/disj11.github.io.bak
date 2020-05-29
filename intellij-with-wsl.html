@@ -11,7 +11,7 @@
 
 
 
-    <title>Inverted index (역색인)</title>
+    <title>Intellij 에서 WSL 사용</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -47,30 +47,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="Record my life" />
     <link rel="shortcut icon" href="https://disj11.github.io/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://disj11.github.io/inverted-index" />
+    <link rel="canonical" href="https://disj11.github.io/intellij-with-wsl" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Life Log" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Inverted index (역색인)" />
-    <meta property="og:description" content="소개 Inverted index(역방향 인덱스)는 대용량 텍스트 검색을 위해서 고안된 방법이다. 요즘 많이 사용하는 해시태그 기능을 구현하고 싶다면 역방향 인덱스 방법을 사용할 수 있다. 기존의 검색 방식 WHERE = SELECT * FROM DOCUMENT WHERE content = 'search text' 검색어와 정확히 일치하는 문서만 검색된다. 인덱스가 걸려있을 경우 속도는 빠를 수 있지만, 문서" />
-    <meta property="og:url" content="https://disj11.github.io/inverted-index" />
+    <meta property="og:title" content="Intellij 에서 WSL 사용" />
+    <meta property="og:description" content="소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다. 방법 File - Settings - Tools - Terminal Shell path 에 아래 내용 입력 "C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run WSL 에 접속하여 ~/.profile 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가 PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH" 왜 수정이 필요한지는 https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504 참고 참고한 사이트" />
+    <meta property="og:url" content="https://disj11.github.io/intellij-with-wsl" />
     <meta property="og:image" content="https://disj11.github.io/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2019-04-24T16:30:00+00:00" />
-    <meta property="article:modified_time" content="2019-04-24T16:30:00+00:00" />
-    <meta property="article:tag" content="Database" />
+    <meta property="article:published_time" content="2020-05-29T13:00:00+00:00" />
+    <meta property="article:modified_time" content="2020-05-29T13:00:00+00:00" />
+    <meta property="article:tag" content="Intellij" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Inverted index (역색인)" />
-    <meta name="twitter:description" content="소개 Inverted index(역방향 인덱스)는 대용량 텍스트 검색을 위해서 고안된 방법이다. 요즘 많이 사용하는 해시태그 기능을 구현하고 싶다면 역방향 인덱스 방법을 사용할 수 있다. 기존의 검색 방식 WHERE = SELECT * FROM DOCUMENT WHERE content = 'search text' 검색어와 정확히 일치하는 문서만 검색된다. 인덱스가 걸려있을 경우 속도는 빠를 수 있지만, 문서" />
+    <meta name="twitter:title" content="Intellij 에서 WSL 사용" />
+    <meta name="twitter:description" content="소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다. 방법 File - Settings - Tools - Terminal Shell path 에 아래 내용 입력 "C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run WSL 에 접속하여 ~/.profile 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가 PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH" 왜 수정이 필요한지는 https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504 참고 참고한 사이트" />
     <meta name="twitter:url" content="https://disj11.github.io/" />
     <meta name="twitter:image" content="https://disj11.github.io/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Life Log" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Database" />
+    <meta name="twitter:data2" content="Intellij" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -85,7 +85,7 @@
         "name": "Life Log",
         "logo": "https://disj11.github.io/"
     },
-    "url": "https://disj11.github.io/inverted-index",
+    "url": "https://disj11.github.io/intellij-with-wsl",
     "image": {
         "@type": "ImageObject",
         "url": "https://disj11.github.io/assets/images/blog-cover.jpg",
@@ -94,9 +94,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://disj11.github.io/inverted-index"
+        "@id": "https://disj11.github.io/intellij-with-wsl"
     },
-    "description": "소개 Inverted index(역방향 인덱스)는 대용량 텍스트 검색을 위해서 고안된 방법이다. 요즘 많이 사용하는 해시태그 기능을 구현하고 싶다면 역방향 인덱스 방법을 사용할 수 있다. 기존의 검색 방식 WHERE = SELECT * FROM DOCUMENT WHERE content = 'search text' 검색어와 정확히 일치하는 문서만 검색된다. 인덱스가 걸려있을 경우 속도는 빠를 수 있지만, 문서"
+    "description": "소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다. 방법 File - Settings - Tools - Terminal Shell path 에 아래 내용 입력 "C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run WSL 에 접속하여 ~/.profile 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가 PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH" 왜 수정이 필요한지는 https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504 참고 참고한 사이트"
 }
     </script>
 
@@ -109,7 +109,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Inverted index (역색인)" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Intellij 에서 WSL 사용" href="/feed.xml" />
     <style>
         .highlighter-rouge, .highlight, code {
             width: 100%;
@@ -176,17 +176,21 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="24 April 2019">24 April 2019</time>
+                    <time class="post-full-meta-date" datetime="29 May 2020">29 May 2020</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/database/'>DATABASE</a>
+                               <a href='/tag/intellij/'>INTELLIJ</a>,
+                            
+                        
+                            
+                               <a href='/tag/wsl/'>WSL</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Inverted index (역색인)</h1>
+                <h1 class="post-full-title">Intellij 에서 WSL 사용</h1>
             </header>
 
             
@@ -194,90 +198,24 @@ into the {body} of the default.hbs template -->
             <section class="post-full-content">
                 <div class="kg-card-markdown">
                     <h3 id="소개">소개</h3>
-<blockquote>
-  <p>Inverted index(역방향 인덱스)는 대용량 텍스트 검색을 위해서 고안된 방법이다.
-요즘 많이 사용하는 해시태그 기능을 구현하고 싶다면 역방향 인덱스 방법을 사용할 수 있다.</p>
-</blockquote>
+<p>Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다.
+WSL은 이미 설치되어 있다고 가정하였습니다.</p>
 
-<h3 id="기존의-검색-방식">기존의 검색 방식</h3>
+<h3 id="방법">방법</h3>
 <ol>
-  <li>
-    <p>WHERE =<br />
-<code class="highlighter-rouge">SELECT * FROM DOCUMENT WHERE content = 'search text'</code> <br />
-검색어와 정확히 일치하는 문서만 검색된다.
-인덱스가 걸려있을 경우 속도는 빠를 수 있지만, 문서 결과를 거의 얻지 못한다.</p>
-  </li>
-  <li>
-    <p>WHERE LIKE<br />
-<code class="highlighter-rouge">SELECT * FROM DOCUMENT WHERE content like '%search text%'</code> <br />
-검색어가 포함되는 문서를 검색한다.
-1번 보다 검색 결과가 많이 나올 순 있지만, 1번과 마찬가지로 검색어와 정확히 일치하는
-문장이 포함되어야 한다.</p>
-  </li>
-  <li>
-    <p>Whitespace tokenizer AND<br />
-<code class="highlighter-rouge">SELECT * FROM DOCUMENT WHERE content like '%search% and content like %text%</code>
-검색어의 모든 단어가 포함되는 문서를 검색한다. 2번 방식보다는 향상된 결과를 보여준다.</p>
-  </li>
-  <li>
-    <p>Whitespace tokenizer OR<br />
-<code class="highlighter-rouge">SELECT * FROM DOCUMENT WHERE content like '%search% and content like %text%</code> <br />
-검색어의 단어 중 하나의 단어라도 포함되어 있는 문서를 검색한다.
-1~3번의 방식 중 가장 많은 결과가 검색되지만, 하나의 단어라도 포함되어 있는 문서는 전부
-검색되기 때문에 검색 결과의 정확성이 떨어질 수 있다.</p>
+  <li>File - Settings - Tools - Terminal</li>
+  <li>Shell path 에 아래 내용 입력<br />
+<code class="highlighter-rouge">"C:\Users\&lt;username&gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe" run</code></li>
+  <li>WSL 에 접속하여 <code class="highlighter-rouge">~/.profile</code> 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PATH="$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH"
+</code></pre></div>    </div>
+    <p>왜 수정이 필요한지는 <a href="https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504">https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504</a> 참고</p>
   </li>
 </ol>
 
-<h3 id="기존-방식의-문제">기존 방식의 문제</h3>
-<ol>
-  <li>1번과 같은 검색 방식의 경우 검색 결과를 거의 얻지 못함</li>
-  <li>2~3번과 같은 경우 index를 타지 않기 때문어 검색 속도가 느림
-(like 검색시 %를 앞에 넣게되는 경우 인덱스를 타지 않는다.)</li>
-</ol>
-
-<h3 id="inverted-index">Inverted index</h3>
-<blockquote>
-  <p>위에서와 같이 기존 검색 방식은 INDEX 기능을 이용할 수 없다는 단점이 있다.
-이를 극복하기 위해 단어(Term)로 인덱싱을 하는 Inverted index 방식이 고안되었다.</p>
-</blockquote>
-
-<p>Inverted index는 아래의 표를 통해 쉽게 이해할 수 있다.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">term</th>
-      <th style="text-align: left">document_id</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">안녕</td>
-      <td style="text-align: left">1,2,3</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">붕어빵</td>
-      <td style="text-align: left">1,2</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">고기</td>
-      <td style="text-align: left">1</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>위의 표와 같이 역색인은 키워드에 문서의 Pk와 같은 값을 매핑하여 저장하는 기술이다.
-역색인 작업을 했을 때의 장점은 검색 속도가 굉장히 빨라진다는 것이다. (term에 인덱스를 사용)</p>
-
-<p>“안녕 붕어빵”으로 검색 하였을 시 OR 처리를 하였다고 가정한다면,
-1, 2, 3번 문서가 검색된다.
-여기서 좀 더 발전시켜 문서별 단어 등장 빈도수를 계산하여,
-빈도가 높은 순으로 정렬 하는 등 세부적인 처리를 통해
-검색 결과의 품질을 높일 수 있다.</p>
-
-<p>[참고 사이트] <br />
-<a href="https://blog.lael.be/post/3056" target="_blank">https://blog.lael.be/post/3056</a>
-<a href="https://needjarvis.tistory.com/345" target="_blank">https://needjarvis.tistory.com/345</a></p>
+<h3 id="참고한-사이트">참고한 사이트</h3>
+<p><a href="https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504">https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504</a>
+<a href="https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products">https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products</a></p>
 
                 </div>
             </section>
@@ -343,144 +281,9 @@ into the {body} of the default.hbs template -->
                 
                 
                 
-                    <article class="read-next-card"
-                        
-                            style="background-image: url(/assets/images/blog-cover.jpg)"
-                        
-                    >
-                        <header class="read-next-card-header">
-                            <small class="read-next-card-header-sitetitle">&mdash; Life Log &mdash;</small>
-                            
-                                <h3 class="read-next-card-header-title"><a href="/tag/database/">Database</a></h3>
-                            
-                        </header>
-                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
-</div>
-                        <div class="read-next-card-content">
-                            <ul>
-                                
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/isolation-level">Isolation level (격리 수준)</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/role-based-access-control">RBAC (Role Based Access Control - 역할 기반 접근 제어)</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                            </ul>
-                        </div>
-                        <footer class="read-next-card-footer">
-                            <a href="/tag/database/">
-                                
-                                    See all 2 posts  →
-                                
-                            </a>
-                        </footer>
-                    </article>
-                
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
-            
-                
-
-    <article class="post-card post-template no-image">
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/bitmasking">
-                <header class="post-card-header">
-                    
-                        
-                            
-                               <span class="post-card-tags">Data structure</span>
-                            
-                        
-                            
-                                <span class="post-card-tags">Bit masking</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">Bit Masking (비트마스킹)</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/images/ghost.png" alt="Saturday" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/saturday/">Saturday</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
             
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
@@ -490,21 +293,21 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/server-sent-events">
+            <a class="post-card-content-link" href="/java-image-resize">
                 <header class="post-card-header">
                     
                         
                             
-                               <span class="post-card-tags">Spring</span>
+                               <span class="post-card-tags">Java</span>
                             
                         
                             
-                                <span class="post-card-tags">Sse</span>
+                                <span class="post-card-tags">Image</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">SSE (Server-Sent Events)</h2>
+                    <h2 class="post-card-title">자바 이미지 리사이징 후 색상이 변경되는 문제</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -548,18 +351,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Inverted index (역색인)</div>
+    <div class="floating-header-title">Intellij 에서 WSL 사용</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Inverted+index+%28%EC%97%AD%EC%83%89%EC%9D%B8%29&amp;url=https://disj11.github.io/inverted-index"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Intellij+%EC%97%90%EC%84%9C+WSL+%EC%82%AC%EC%9A%A9&amp;url=https://disj11.github.io/intellij-with-wsl"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://disj11.github.io/inverted-index"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://disj11.github.io/intellij-with-wsl"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

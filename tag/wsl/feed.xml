@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://disj11.github.io/tag/wsl/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
+  <updated>2020-05-29T03:19:22+00:00</updated>
+  <id>https://disj11.github.io/tag/wsl/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Life Log | </title>
+  
+
+  
+    <subtitle>Record my life</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Intellij 에서 WSL 사용</title>
+      <link href="https://disj11.github.io/intellij-with-wsl" rel="alternate" type="text/html" title="Intellij 에서 WSL 사용" />
+      <published>2020-05-29T13:00:00+00:00</published>
+      <updated>2020-05-29T13:00:00+00:00</updated>
+      <id>https://disj11.github.io/intellij-with-wsl</id>
+      <content type="html" xml:base="https://disj11.github.io/intellij-with-wsl">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다.
+WSL은 이미 설치되어 있다고 가정하였습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;방법&quot;&gt;방법&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;File - Settings - Tools - Terminal&lt;/li&gt;
+  &lt;li&gt;Shell path 에 아래 내용 입력&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe&quot; run&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;WSL 에 접속하여 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt; 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PATH=&quot;$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;왜 수정이 필요한지는 &lt;a href=&quot;https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504&quot;&gt;https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504&lt;/a&gt; 참고&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;참고한-사이트&quot;&gt;참고한 사이트&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504&quot;&gt;https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504&lt;/a&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products&quot;&gt;https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products&lt;/a&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Saturday</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Intellij" />
+      
+        <category term="WSL" />
+      
+
+      
+        <summary type="html">소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

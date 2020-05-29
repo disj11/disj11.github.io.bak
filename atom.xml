@@ -8,6 +8,23 @@
     
       
       <item>
+        <title>Intellij 에서 WSL 사용</title>
+        
+          <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다.
+WSL은 이미 설치되어 있다고 가정하였습니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 29 May 2020 13:00:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/intellij-with-wsl</link>
+        <guid isPermaLink="true">https://disj11.github.io/intellij-with-wsl</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>자바 이미지 리사이징 후 색상이 변경되는 문제</title>
         
           <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;

@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2020-05-06T12:43:56+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">자바 이미지 리사이징 후 색상이 변경되는 문제</title><link href="https://disj11.github.io/java-image-resize" rel="alternate" type="text/html" title="자바 이미지 리사이징 후 색상이 변경되는 문제" /><published>2020-05-06T18:00:00+00:00</published><updated>2020-05-06T18:00:00+00:00</updated><id>https://disj11.github.io/java-image-resize</id><content type="html" xml:base="https://disj11.github.io/java-image-resize">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2020-05-29T03:19:22+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Intellij 에서 WSL 사용</title><link href="https://disj11.github.io/intellij-with-wsl" rel="alternate" type="text/html" title="Intellij 에서 WSL 사용" /><published>2020-05-29T13:00:00+00:00</published><updated>2020-05-29T13:00:00+00:00</updated><id>https://disj11.github.io/intellij-with-wsl</id><content type="html" xml:base="https://disj11.github.io/intellij-with-wsl">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다.
+WSL은 이미 설치되어 있다고 가정하였습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;방법&quot;&gt;방법&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;File - Settings - Tools - Terminal&lt;/li&gt;
+  &lt;li&gt;Shell path 에 아래 내용 입력&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Microsoft\WindowsApps\ubuntu2004.exe&quot; run&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;WSL 에 접속하여 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt; 파일의 PATH 부분을 주석 처리 하고, 아래 내용 추가
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PATH=&quot;$HOME/bin:$HOME/.local/bin:/usr/bin:$PATH&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;왜 수정이 필요한지는 &lt;a href=&quot;https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504&quot;&gt;https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504&lt;/a&gt; 참고&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;참고한-사이트&quot;&gt;참고한 사이트&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504&quot;&gt;https://github.com/microsoft/WSL/issues/1512#issuecomment-303517504&lt;/a&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products&quot;&gt;https://stackoverflow.com/questions/51912772/how-to-use-wsl-as-default-terminal-in-webstorm-or-any-other-jetbrains-products&lt;/a&gt;&lt;/p&gt;</content><author><name>Saturday</name></author><category term="Intellij" /><category term="WSL" /><summary type="html">소개 Intellij에서 기본 터미널로 WSL 을 사용하는 방법입니다. WSL은 이미 설치되어 있다고 가정하였습니다.</summary></entry><entry><title type="html">자바 이미지 리사이징 후 색상이 변경되는 문제</title><link href="https://disj11.github.io/java-image-resize" rel="alternate" type="text/html" title="자바 이미지 리사이징 후 색상이 변경되는 문제" /><published>2020-05-06T18:00:00+00:00</published><updated>2020-05-06T18:00:00+00:00</updated><id>https://disj11.github.io/java-image-resize</id><content type="html" xml:base="https://disj11.github.io/java-image-resize">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
 &lt;p&gt;java 에서 jpg 이미지를 리사이징 후 색상이 이상하게 변경되어 기록&lt;/p&gt;
 
 &lt;h3 id=&quot;내용&quot;&gt;내용&lt;/h3&gt;
@@ -634,160 +652,4 @@ PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;
       &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/anilist-detail.png&quot; alt=&quot;상세 화면&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Saturday</name></author><category term="Toy Project" /><summary type="html">오래된 포스트 입니다. 새로운 포스팅은 여기에서 확인해주세요.</summary></entry><entry><title type="html">RBAC (Role Based Access Control - 역할 기반 접근 제어)</title><link href="https://disj11.github.io/role-based-access-control" rel="alternate" type="text/html" title="RBAC (Role Based Access Control - 역할 기반 접근 제어)" /><published>2019-06-15T02:30:00+00:00</published><updated>2019-06-15T02:30:00+00:00</updated><id>https://disj11.github.io/role-based-access-control</id><content type="html" xml:base="https://disj11.github.io/role-based-access-control">&lt;h3 id=&quot;잡담&quot;&gt;잡담&lt;/h3&gt;
-&lt;p&gt;역할 기반 접근 제어를 사용할 일이 필요해 검색을 하던 중,
-&lt;a href=&quot;https://stackoverflow.com/questions/28157798/is-my-role-based-access-control-a-feasible-solution/28159647#28159647&quot;&gt;좋은 글&lt;/a&gt;을 찾아 포스팅을 하게 되었습니다.
-역할 기반 접근 제어의 설명보다는, 구현 방법에 대해 알아보기 위한 글입니다.&lt;/p&gt;
-
-&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
-&lt;p&gt;역할 기반 접근 제어는 사용자의 역할에 따라 권한을 구분하고,
-권한이 없는 사용자에게는 시스템 접근을 제한하는 방법이다.
-사전에 역할을 미리 정의해두고, 사용자에게 역할을 부여함으로써 권한을 제어한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;간단한-솔루션&quot;&gt;간단한 솔루션&lt;/h3&gt;
-&lt;p&gt;Stackoverflow 같은 사이트를 만든다고 가정하자.
-우리는 아래와 같은 두 가지 모듈이 필요한 상황이다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;질문 (questions)&lt;/li&gt;
-  &lt;li&gt;채팅 (chat)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;이 모듈의 권한을 관리하기 위해서는 아래와 같은 테이블이 필요하다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Modules
-- id : 모듈의 고유 ID
-- name : 모듈에 대한 설명
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;그리고 이 모듈들이 할 수 있는 액션을 정의한다.
-예를 들어 질문 모듈의 경우&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;질문 등록&lt;/li&gt;
-  &lt;li&gt;질문 삭제&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;등등 이 있을 수 있고, 채팅 모듈의 경우&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;채팅방 열기&lt;/li&gt;
-  &lt;li&gt;강퇴&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;등등이 있을 수 있다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Actions
-- module_id : 사전에 정의한 모듈의 ID
-- action : 모듈의 기능
-- name : 기능에 대한 설명
-
-- Primary Key : [module_id, action]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;이제 두 테이블을 정의한 모습을 보자.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Modules
-+------------------------------------------+
-| ID        | Name                         |
-+------------------------------------------+
-| questions | Question and Answer Module   |
-| chat      | Chat Module                  |
-+------------------------------------------+
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Actions
-+-----------------------------------------------+
-| Module    | Action    |  Name                 |
-+-----------------------------------------------+
-| questions | read      | Read Questions        |
-| questions | create    | Create Questions      |
-| questions | edit      | Edit Questions        |
-| questions | delete    | Delete Questions      |
-|           |           |                       |
-| chat      | join      | Join the Chat         |
-| chat      | kick      | Kick users            |
-| chat      | create    | Create Chatrooms      |
-+-----------------------------------------------+  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;여기서 중요한 점은 위 두 테이블은 &lt;em&gt;시스템 관리자가 직접 수정할 수 없는 데이터&lt;/em&gt;이므로,
-기능 추가 / 제거와 같은 GUI 가 있어서는 안된다는 점이다.&lt;/p&gt;
-
-&lt;p&gt;여기까지 만들어졌다면 이제는 역할을 만들어야 한다.
-역할 테이블은 위 테이블들과는 달리 관리자에 의해 관리될 수 있으며,
-기본적으로 아래와 같은 역할이 있을 수 있다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Q&amp;amp;A User:
-   - 질문을 읽을 수 있음
-   - 질문을 등록 할 수 있음
-Q&amp;amp;A Moderator:
-   - 질문을 읽을 수 있음
-   - 질문을 등록 할 수 있음
-   - 질문을 수정할 수 있음
-Q&amp;amp;A Admin:
-   - 질문을 읽을 수 있음
-   - 질문을 등록 할 수 있음
-   - 질문을 수정할 수 있음
-   - 질문을 삭제 할 수 있음
-
-Chat User:
-   - 채팅방에 참여할 수 있음
-
-Chat Moderator:
-   - 채팅방에 참여할 수 있음
-   - 채팅방에서 사용자를 강퇴할 수 있음
-
-Chat Admin:
-   - 채팅방에 참여할 수 있음
-   - 채팅방에서 사용자를 강퇴할 수 있음
-   - 채팅방을 개설할 수 있음
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;그럼 위 내용을 바탕으로 역할 테이블을 만들어 보자&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Roles
-+-----------------------+
-| ID | Name             |
-+-----------------------+
-| 1  | Q&amp;amp;A User         |
-| 2  | Q&amp;amp;A Moderator    |
-| 3  | Q&amp;amp;A Admin        |
-| 4  | Chat User        |
-| 5  | Chat Moderator   |
-| 6  | Chat Admin       |
-+-----------------------+
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위와 같은 테이블이 탄생하였다.
-이제 역할에서 허용할 기능을 알려줄 &lt;code class=&quot;highlighter-rouge&quot;&gt;roles_actions&lt;/code&gt;을 정의하자.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Roles_Actions
-  - role_id
-  - module_id 
-  - action
-
-  PK: [role_id, module_id, action]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위 테이블에는 아래와 같은 내용이 들어가게 될 것이다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Roles_Actions
-+--------------------------------+
-| Role ID | Module ID | Action   |
-+--------------------------------+
-|    1    | questions |  read    |
-|    1    | questions |  create  |
-|    2    | questions |  read    |
-|    2    | questions |  create  |
-|    2    | questions |  edit    |
-               ...  
-|    6    |    chat   |  join    |
-|    6    |    chat   |  kick    |
-|    6    |    chat   |  create  |
-+--------------------------------+
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;마지막으로 사용자에게 역할을 부여하기 위한 테이블 &lt;code class=&quot;highlighter-rouge&quot;&gt;users_roles&lt;/code&gt;을 정의하자.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# User_Roles
-   - user_id [FK:user_id, unsigned]
-   - role_id [FK:roles_id, unsigned]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;테이블의 내용은 아래와 같다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Users_Roles
-+---------------------------------+
-| User ID | Role ID               |
-+---------------------------------+
-|    1    |  3 (= Q&amp;amp;A Admin)      |
-|    1    |  6 (= Chat Admin)     |
-|    2    |  2 (= Q&amp;amp;A Moderator)  |    
-|    2    |  4 (= Chat User)      |
-|    3    |  2 (= Q&amp;amp;A Moderator)  |  
-|    3    |  5 (= Chat Moderator) | 
-+---------------------------------+
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Saturday</name></author><category term="Database" /><summary type="html">잡담 역할 기반 접근 제어를 사용할 일이 필요해 검색을 하던 중, 좋은 글을 찾아 포스팅을 하게 되었습니다. 역할 기반 접근 제어의 설명보다는, 구현 방법에 대해 알아보기 위한 글입니다.</summary></entry></feed>
+&lt;/table&gt;</content><author><name>Saturday</name></author><category term="Toy Project" /><summary type="html">오래된 포스트 입니다. 새로운 포스팅은 여기에서 확인해주세요.</summary></entry></feed>
