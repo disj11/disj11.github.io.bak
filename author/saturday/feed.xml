@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/author/saturday/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2020-05-29T06:16:49+00:00</updated>
+  <updated>2020-06-12T23:28:00+00:00</updated>
   <id>https://disj11.github.io/author/saturday/feed.xml</id>
 
   
@@ -617,7 +617,8 @@ Details of the dependencies that are managed by Spring Boot.&lt;br /&gt;
 &lt;p&gt;react, apollo, graphql, ant design&lt;/p&gt;
 
 &lt;h3 id=&quot;사이트-url&quot;&gt;사이트 URL&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://disj11.github.com/anilist-client&quot;&gt;애니메이션 정보 검색 사이트&lt;/a&gt; &lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://anilist-client.vercel.app/&quot;&gt;애니메이션 정보 검색 사이트&lt;/a&gt; &lt;br /&gt;
+&lt;del&gt;&lt;a href=&quot;https://disj11.github.com/anilist-client&quot;&gt;애니메이션 정보 검색 사이트&lt;/a&gt;&lt;/del&gt; &lt;br /&gt;
 &lt;a href=&quot;https://github.com/disj11/anilist-client&quot;&gt;Git repository&lt;/a&gt;&lt;/p&gt;</content>
 
       
