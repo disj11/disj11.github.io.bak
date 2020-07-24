@@ -8,6 +8,22 @@
     
       
       <item>
+        <title>FFmpeg를 사용하여 동영상 합치기</title>
+        
+          <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;FFmpeg를 사용하여 동영상을 합치는 방법을 소개&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 23 Jul 2020 19:30:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/concatenate-videos-using-ffmpeg</link>
+        <guid isPermaLink="true">https://disj11.github.io/concatenate-videos-using-ffmpeg</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Intellij 에서 WSL 사용</title>
         
           <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
