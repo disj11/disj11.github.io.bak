@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/author/saturday/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2020-07-24T00:44:27+00:00</updated>
+  <updated>2020-07-24T07:17:11+00:00</updated>
   <id>https://disj11.github.io/author/saturday/feed.xml</id>
 
   
@@ -30,120 +30,6 @@
   
   
 
-  
-    <entry>
-      <title type="html">FFmpeg를 사용하여 동영상 합치기</title>
-      <link href="https://disj11.github.io/concatenate-videos-using-ffmpeg" rel="alternate" type="text/html" title="FFmpeg를 사용하여 동영상 합치기" />
-      <published>2020-07-23T19:30:00+00:00</published>
-      <updated>2020-07-23T19:30:00+00:00</updated>
-      <id>https://disj11.github.io/concatenate-videos-using-ffmpeg</id>
-      <content type="html" xml:base="https://disj11.github.io/concatenate-videos-using-ffmpeg">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
-&lt;p&gt;FFmpeg를 사용하여 동영상을 합치는 방법을 소개&lt;/p&gt;
-
-&lt;h3 id=&quot;방법&quot;&gt;방법&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;concat demuxer
-    &lt;ul&gt;
-      &lt;li&gt;트랜스 코딩을 피하므로 매우 빠름&lt;/li&gt;
-      &lt;li&gt;동영상의 비디오 및 오디오 인코딩이 모두 동일한 경우에만 작동&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;file level concatenation
-    &lt;ul&gt;
-      &lt;li&gt;이 방법을 사용할 수 있는 인코딩은 거의 없음 (MPEG-2 Transport Stream codec (.ts)일때에만 사용 가능)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;complex filtergraph with the concat filter
-    &lt;ul&gt;
-      &lt;li&gt;다른 방식으로 인코딩된 동영상을 합칠때 사용 가능&lt;/li&gt;
-      &lt;li&gt;트랜스코딩이 발생하므로 품질이 저하되고, 느릴 수 있음&lt;/li&gt;
-      &lt;li&gt;문법을 이해하기가 힘듦&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;예제&quot;&gt;예제&lt;/h3&gt;
-&lt;p&gt;concat demuxer:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ffmpeg -f concat -i list.txt -c copy out.mp4
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;대부분의 ffmpeg 며령광 달리 이 명령은 연결하려는 동영상을 텍스트 파일에서 가져옴.
-텍스트 파일은 다음과 같음&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;file 'video1.mp4'
-file 'video2.mp4'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;file level concatenation:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ffmpeg -i &quot;concat:video1.ts|video2.ts&quot; -c copy out.ts
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;complex filtergraph with the concat filter:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ffmpeg -i video1.mp4 -i video2.flv -filter_complex \
-&quot;[0:v][0:a][1:v][1:a] concat=n=2:v=1:a=1 [outv] [outa]&quot; \
--map &quot;[outv]&quot; -map &quot;[outa]&quot; out.mp4
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;의미를 하나씩 해석해보자.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[0:v][0:a][1:v][1:a]&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;[index_of_input : stream_type]&lt;/p&gt;
-
-&lt;p&gt;첫 번째 입력 소스의 비디오 스트림, 첫 번째 입력 소스의 오디오 스트림, 두 번째 입력 소스의 비디오 스트림, 두 번째 입력 소스의 오디오 스트림을 사용&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;concat=n=2:v=1:a=1&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;concat&lt;/code&gt;: 필터의 이름&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;n=2&lt;/code&gt;: 두 개의 입력 소스가 있음을 지정&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;v=1&lt;/code&gt;: 출력 비디오 스트림의 수가 하나라고 설정&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a=1&lt;/code&gt;: 출력 오디오 스트림의 수가 하나라고 설정&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[outv] [outa]&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;필터로 만든 데이터 스트림에 레이블을 지정함.&lt;br /&gt;
-나중에 나올 &lt;code class=&quot;highlighter-rouge&quot;&gt;-map&lt;/code&gt; 에서 필요&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-map &quot;[outv]&quot;-map &quot;[outa]&quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;입력 파일에서 스트림을 사용하지 말고, 대신 필터 그래프에서 생성한 데이터 스트림을 사용하도록 지정&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ffmpeg.org/ffmpeg-filters.html#concat&quot; target=&quot;_blank&quot;&gt;concat 필터 문서 참조&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;참고-사이트&quot;&gt;참고 사이트&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://dev.to/dak425/concatenate-videos-together-using-ffmpeg-2gg1&quot; target=&quot;_blank&quot;&gt;https://dev.to/dak425/concatenate-videos-together-using-ffmpeg-2gg1&lt;/a&gt;&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Saturday</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="ffmpeg" />
-      
-
-      
-        <summary type="html">소개 FFmpeg를 사용하여 동영상을 합치는 방법을 소개</summary>
-      
-
-      
-      
-    </entry>
   
     <entry>
       <title type="html">Intellij 에서 WSL 사용</title>
@@ -1068,6 +954,91 @@ PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;
 
       
         <summary type="html">사용 이유 이니시스 빌링 결제 구현 중 본인 인증 -&amp;gt; 빌링 키 발급 -&amp;gt; 빌링 키로 결제 이렇게 세 가지 단계로 진행되는 파이프라인을 구성해야 했다. 본인 인증 결과가 빌링 키 발급의 input 이 되고, 빌링 키 발급의 결과가 빌링 키 결제의 input 이 되는 식이었다. 또 해당 파이프라인 전후로 다른 작업들의 추가 / 삭제가 간편해야 했다. 위의 조건을 만족하는 방법을 찾던 중 이 글을 발견하여, 시스템에 적용하였는데 꽤나 유용한 것 같아 글을 남기기로 하였다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Anilist</title>
+      <link href="https://disj11.github.io/anilist" rel="alternate" type="text/html" title="Anilist" />
+      <published>2019-06-20T23:13:00+00:00</published>
+      <updated>2019-06-20T23:13:00+00:00</updated>
+      <id>https://disj11.github.io/anilist</id>
+      <content type="html" xml:base="https://disj11.github.io/anilist">&lt;p&gt;오래된 포스트 입니다.
+새로운 포스팅은 &lt;a href=&quot;/anilist-v2&quot;&gt;여기&lt;/a&gt;에서 확인해주세요.&lt;/p&gt;
+
+&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;회사에서 사용하는 기술만 사용하다보니, 너무 정체되는 것 같은 생각이 들었다.
+요즘 GraphQL, React 같은 글들이 많이 접하여, 이게 뭐지 하고 궁금했던 차에 무언가 하나 만들어 보자는 생각이 들었다.
+원래 애니메이션을 좋아했기 때문에 애니메이션 정보를 확인할 수 있는 사이트를 만들기로 했다.
+찾다보니 애니메이션, 만화 등의 정보를 GraphQL로 제공해주는 &lt;a href=&quot;https://github.com/AniList/ApiV2-GraphQL-Docs&quot;&gt;사이트&lt;/a&gt;를 발견하였다.
+좋아 만들어보자. 하고 2~3일에 걸쳐 사이트를 만들었다.
+단순히 GraphQL과 React 가 무엇인지 한번 써보고 싶어 만들었기 때문에, 코드는 안보는 것이 좋을 것 같다.
+그래도 보고 싶다면 &lt;a href=&quot;https://github.com/disj11/anilistql-client&quot;&gt;여기&lt;/a&gt;로…&lt;/p&gt;
+
+&lt;h3 id=&quot;사이트-화면&quot;&gt;사이트 화면&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;em&gt;메인 화면&lt;/em&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/anilist-main.png&quot; alt=&quot;메인 화면&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;em&gt;검색 화면&lt;/em&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/anilist-search.png&quot; alt=&quot;검색 화면&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;em&gt;상세 화면&lt;/em&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/anilist-detail.png&quot; alt=&quot;상세 화면&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Saturday</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Toy Project" />
+      
+
+      
+        <summary type="html">오래된 포스트 입니다. 새로운 포스팅은 여기에서 확인해주세요.</summary>
       
 
       
