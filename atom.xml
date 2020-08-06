@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>Logging - Spring AOP</title>
+        
+          <description>&lt;p&gt;AOP 를 사용하여 로그를 남기는 방법을 예제를 통해 알아보자.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 06 Aug 2020 18:40:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/Logging-Spring-AOP</link>
+        <guid isPermaLink="true">https://disj11.github.io/Logging-Spring-AOP</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Intellij 에서 WSL 사용</title>
         
           <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
