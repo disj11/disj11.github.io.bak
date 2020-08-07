@@ -14,7 +14,7 @@ AOP 를 사용하여 로그를 남기는 방법을 예제를 통해 알아보자
 
 ---
 
-AspectJ 기능 활성화ghfcmvncmbn,msdh
+AspectJ 기능 활성화
 ```java
 @Configuration
 @EnableAspectJAutoProxy
