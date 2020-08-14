@@ -11,8 +11,9 @@ author: saturday
 ---
 
 == 소개
-깃 브랜치 모델에 대하여 설명합니다.
 https://nvie.com/posts/a-successful-git-branching-model/[참고 사이트]
+
+깃 브랜치 모델에 대하여 설명합니다.
 간단한 flow를 원하는 경우는 https://guides.github.com/introduction/flow/[여기]를 참고하세요.
 
 == flow
