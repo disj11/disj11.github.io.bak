@@ -17,7 +17,7 @@ https://nvie.com/posts/a-successful-git-branching-model/[참고 사이트]
 간단한 flow를 원하는 경우는 https://guides.github.com/introduction/flow/[여기]를 참고하세요.
 
 == flow
-image::https://nvie.com/img/git-model@2x.png[]
+image::https://nvie.com/img/git-model@2x.png[width=100%]
 
 == The main branches
 * master
