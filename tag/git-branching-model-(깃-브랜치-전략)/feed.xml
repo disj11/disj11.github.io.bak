@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/tag/git-branching-model-(%EA%B9%83-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2020-08-14T06:38:14+00:00</updated>
+  <updated>2020-08-14T06:42:27+00:00</updated>
   <id>https://disj11.github.io/tag/git-branching-model-(%EA%B9%83-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)/feed.xml</id>
 
   
@@ -54,7 +54,7 @@
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://nvie.com/img/git-model@2x.png&quot; alt=&quot;git model@2x&quot;&gt;
+&lt;img src=&quot;https://nvie.com/img/git-model@2x.png&quot; alt=&quot;git model@2x&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
