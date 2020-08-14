@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://disj11.github.io/tag/git-branching-model-(%EA%B9%83-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
-  <updated>2020-08-14T06:42:27+00:00</updated>
+  <updated>2020-08-14T06:50:29+00:00</updated>
   <id>https://disj11.github.io/tag/git-branching-model-(%EA%B9%83-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)/feed.xml</id>
 
   
@@ -46,16 +46,6 @@
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;깃 브랜치 모델에 대하여 설명합니다.
 간단한 flow를 원하는 경우는 &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;여기&lt;/a&gt;를 참고하세요.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;flow&quot;&gt;flow&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://nvie.com/img/git-model@2x.png&quot; alt=&quot;git model@2x&quot; width=&quot;100%&quot;&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -161,6 +151,16 @@ develop 브랜치로 병합하는 과정에서 충돌이 일어날 수 있습니
 버그 수정이 완료되면 &lt;code&gt;master&lt;/code&gt; 브랜치와 &lt;code&gt;develop&lt;/code&gt; 브랜치에 각각 병합합니다.
 (만약, 이미 &lt;code&gt;release&lt;/code&gt; 브랜치가 존재한다면, &lt;code&gt;develop&lt;/code&gt; 브랜치가 아닌 &lt;code&gt;release&lt;/code&gt; 브랜치로 병합합니다.)
 병합이 완료되면 tag 를 생성합니다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;flow&quot;&gt;flow&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;https://nvie.com/img/git-model@2x.png&quot; alt=&quot;{fullWidth}&quot;&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</content>
