@@ -2,9 +2,9 @@
 layout: post
 current: post
 navigation: True
-title: Git branch
+title: Git branching model (깃 브랜치 전략)
 date: 2020-08-15 15:30
-tags: [Git branching model (깃 브랜치 전략)]
+tags: [Git]
 class: post-template
 subclass: 'post'
 author: saturday
