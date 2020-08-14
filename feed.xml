@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2020-08-14T06:33:47+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Git branch</title><link href="https://disj11.github.io/git-branch-model" rel="alternate" type="text/html" title="Git branch" /><published>2020-08-15T15:30:00+00:00</published><updated>2020-08-15T15:30:00+00:00</updated><id>https://disj11.github.io/git-branch-model</id><content type="html" xml:base="https://disj11.github.io/git-branch-model">&lt;div class=&quot;sect1&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2020-08-14T06:38:14+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Git branch</title><link href="https://disj11.github.io/git-branch-model" rel="alternate" type="text/html" title="Git branch" /><published>2020-08-15T15:30:00+00:00</published><updated>2020-08-15T15:30:00+00:00</updated><id>https://disj11.github.io/git-branch-model</id><content type="html" xml:base="https://disj11.github.io/git-branch-model">&lt;div class=&quot;sect1&quot;&gt;
 &lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;참고 사이트&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;깃 브랜치 모델에 대하여 설명합니다.
-&lt;a href=&quot;https://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;참고 사이트&lt;/a&gt;
 간단한 flow를 원하는 경우는 &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;여기&lt;/a&gt;를 참고하세요.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -122,7 +124,7 @@ develop 브랜치로 병합하는 과정에서 충돌이 일어날 수 있습니
 병합이 완료되면 tag 를 생성합니다.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name>Saturday</name></author><category term="Git branching model (깃 브랜치 전략)" /><summary type="html">소개 깃 브랜치 모델에 대하여 설명합니다. 참고 사이트 간단한 flow를 원하는 경우는 여기를 참고하세요.</summary></entry><entry><title type="html">Logging - Spring AOP</title><link href="https://disj11.github.io/Logging-Spring-AOP" rel="alternate" type="text/html" title="Logging - Spring AOP" /><published>2020-08-06T18:40:00+00:00</published><updated>2020-08-06T18:40:00+00:00</updated><id>https://disj11.github.io/Logging-Spring-AOP</id><content type="html" xml:base="https://disj11.github.io/Logging-Spring-AOP">&lt;p&gt;AOP 를 사용하여 로그를 남기는 방법을 예제를 통해 알아보자.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Saturday</name></author><category term="Git branching model (깃 브랜치 전략)" /><summary type="html">소개 참고 사이트</summary></entry><entry><title type="html">Logging - Spring AOP</title><link href="https://disj11.github.io/Logging-Spring-AOP" rel="alternate" type="text/html" title="Logging - Spring AOP" /><published>2020-08-06T18:40:00+00:00</published><updated>2020-08-06T18:40:00+00:00</updated><id>https://disj11.github.io/Logging-Spring-AOP</id><content type="html" xml:base="https://disj11.github.io/Logging-Spring-AOP">&lt;p&gt;AOP 를 사용하여 로그를 남기는 방법을 예제를 통해 알아보자.&lt;/p&gt;
 
 &lt;hr /&gt;
 
