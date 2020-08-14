@@ -8,6 +8,28 @@
     
       
       <item>
+        <title>Git branch</title>
+        
+          <description>&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;깃 브랜치 모델에 대하여 설명합니다.
+&lt;a href=&quot;https://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;참고 사이트&lt;/a&gt;
+간단한 flow를 원하는 경우는 &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;여기&lt;/a&gt;를 참고하세요.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        
+        <pubDate>Sat, 15 Aug 2020 15:30:00 +0000</pubDate>
+        <link>
+        https://disj11.github.io/git-branch-model</link>
+        <guid isPermaLink="true">https://disj11.github.io/git-branch-model</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Logging - Spring AOP</title>
         
           <description>&lt;p&gt;AOP 를 사용하여 로그를 남기는 방법을 예제를 통해 알아보자.&lt;/p&gt;

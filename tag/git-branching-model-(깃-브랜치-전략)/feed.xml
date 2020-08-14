@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://disj11.github.io/tag/git-branching-model-(%EA%B9%83-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://disj11.github.io/" rel="alternate" type="text/html" />
+  <updated>2020-08-14T06:33:47+00:00</updated>
+  <id>https://disj11.github.io/tag/git-branching-model-(%EA%B9%83-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Life Log | </title>
+  
+
+  
+    <subtitle>Record my life</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Git branch</title>
+      <link href="https://disj11.github.io/git-branch-model" rel="alternate" type="text/html" title="Git branch" />
+      <published>2020-08-15T15:30:00+00:00</published>
+      <updated>2020-08-15T15:30:00+00:00</updated>
+      <id>https://disj11.github.io/git-branch-model</id>
+      <content type="html" xml:base="https://disj11.github.io/git-branch-model">&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;깃 브랜치 모델에 대하여 설명합니다.
+&lt;a href=&quot;https://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;참고 사이트&lt;/a&gt;
+간단한 flow를 원하는 경우는 &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;여기&lt;/a&gt;를 참고하세요.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;flow&quot;&gt;flow&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;https://nvie.com/img/git-model@2x.png&quot; alt=&quot;git model@2x&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;the-main-branches&quot;&gt;The main branches&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;master&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;develop&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;supporting-branches&quot;&gt;Supporting branches&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Feature branches&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Release branches&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hotfix branches&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;feature-branches&quot;&gt;Feature branches&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;develop&lt;/code&gt; 브랜치에서 생성&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;develop&lt;/code&gt; 브랜치로 병합&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;브랜치 이름은 master, develop, release-&lt;strong&gt;, hotfix-&lt;/strong&gt; 를 제외하고 모두 가능&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;기능 브랜치는 새로운 기능을 개발하는데 사용됩니다.
+기능 개발이 완료되면 &lt;code&gt;develop&lt;/code&gt; 브랜치로 병합되거나, 필요 없는 기능이라면 폐기됩니다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;release-branches&quot;&gt;Release branches&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;develop&lt;/code&gt; 브랜치에서 생성&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;develop&lt;/code&gt; 브랜치와 &lt;code&gt;master&lt;/code&gt; 브랜치로 병합&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;브랜치 이름은 &lt;code&gt;release-*&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;릴리즈 브랜치는 새 프로덕션을 준비하기 위해 사용됩니다.
+프로덕션에 배포될 기능을 테스트하고, 사소한 버그를 수정합니다.
+버그 수정이 완료되면 master 브랜치와 develop 브랜치로 각각 병합합니다.
+develop 브랜치로 병합하는 과정에서 충돌이 일어날 수 있습니다. 만약 충돌이 발생했다면 적절히 수정후 커밋하세요.
+(릴리즈 브랜치가 생성되었다면 develop 브랜치 프리징 권장합니다.)
+여기까지 완료되었다면 버전 관리를 위해 tag 를 생성합니다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;hotfix-branches&quot;&gt;hotfix branches&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;master&lt;/code&gt; 브랜치에서 생성&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;develop&lt;/code&gt; 브랜치와 &lt;code&gt;master&lt;/code&gt; 브랜치로 병함&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;브랜치 이름은 &lt;code&gt;hotfix-*&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;프로덕션에서 중요한 버그를 즉시 해결해야하는 경우 사용됩니다.
+버그 수정이 완료되면 &lt;code&gt;master&lt;/code&gt; 브랜치와 &lt;code&gt;develop&lt;/code&gt; 브랜치에 각각 병합합니다.
+(만약, 이미 &lt;code&gt;release&lt;/code&gt; 브랜치가 존재한다면, &lt;code&gt;develop&lt;/code&gt; 브랜치가 아닌 &lt;code&gt;release&lt;/code&gt; 브랜치로 병합합니다.)
+병합이 완료되면 tag 를 생성합니다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Saturday</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Git branching model (깃 브랜치 전략)" />
+      
+
+      
+        <summary type="html">소개 깃 브랜치 모델에 대하여 설명합니다. 참고 사이트 간단한 flow를 원하는 경우는 여기를 참고하세요.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
