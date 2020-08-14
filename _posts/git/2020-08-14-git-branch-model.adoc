@@ -16,6 +16,9 @@ https://nvie.com/posts/a-successful-git-branching-model/[참고 사이트]
 깃 브랜치 모델에 대하여 설명합니다.
 간단한 flow를 원하는 경우는 https://guides.github.com/introduction/flow/[여기]를 참고하세요.
 
+== flow
+image::https://nvie.com/img/git-model@2x.png[]
+
 == The main branches
 * master
 * develop
@@ -54,6 +57,3 @@ develop 브랜치로 병합하는 과정에서 충돌이 일어날 수 있습니
 버그 수정이 완료되면 `master` 브랜치와 `develop` 브랜치에 각각 병합합니다.
 (만약, 이미 `release` 브랜치가 존재한다면, `develop` 브랜치가 아닌 `release` 브랜치로 병합합니다.)
 병합이 완료되면 tag 를 생성합니다.
-
-== flow
-image::https://nvie.com/img/git-model@2x.png[{fullWidth}]
