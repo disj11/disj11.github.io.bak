@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2020-08-14T07:20:56+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Git branching model (깃 브랜치 전략)</title><link href="https://disj11.github.io/git-branch-model" rel="alternate" type="text/html" title="Git branching model (깃 브랜치 전략)" /><published>2020-08-15T15:30:00+00:00</published><updated>2020-08-15T15:30:00+00:00</updated><id>https://disj11.github.io/git-branch-model</id><content type="html" xml:base="https://disj11.github.io/git-branch-model">&lt;div class=&quot;sect1&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://disj11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disj11.github.io/" rel="alternate" type="text/html" /><updated>2020-11-16T15:48:58+00:00</updated><id>https://disj11.github.io/</id><title type="html">Life Log</title><subtitle>Record my life</subtitle><entry><title type="html">Git branching model (깃 브랜치 전략)</title><link href="https://disj11.github.io/git-branch-model" rel="alternate" type="text/html" title="Git branching model (깃 브랜치 전략)" /><published>2020-08-15T15:30:00+00:00</published><updated>2020-08-15T15:30:00+00:00</updated><id>https://disj11.github.io/git-branch-model</id><content type="html" xml:base="https://disj11.github.io/git-branch-model">&lt;div class=&quot;sect1&quot;&gt;
 &lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -499,85 +499,11 @@ doSomething() 메서드 실행 후 공통 기능을 실행한다.&lt;/p&gt;
 &lt;h3 id=&quot;spring-aop-주의사항&quot;&gt;Spring AOP 주의사항&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;같은 클래스 내에 있는 메서드를 호출하는 경우&lt;/strong&gt; 프록시를 거쳐가지 않기 때문에, &lt;strong&gt;AOP가 적용되지 않는다.&lt;/strong&gt;&lt;/p&gt;</content><author><name>Saturday</name></author><category term="Spring" /><category term="AOP" /><category term="Proxy" /><summary type="html">Spring AOP (Aspect Oriented Programming) AOP(관점 지향 프로그래밍)는 문제를 해결하기 위한 관심 사항을 핵심 기능과, 공통 부분(Aspect)으로 나누어 공통적인 부분을 각각의 모듈로 만들어 활용하겠다는 것이다. 스프링에서 사용하는 어노테이션인 @Transaction, @Async, @Cacheable 등은 모두 이러한 AOP를 이용한 것이다.</summary></entry><entry><title type="html">스프링 부트 문서 번역 (Spring Boot Reference Documentation)</title><link href="https://disj11.github.io/spring-boot-reference-docs" rel="alternate" type="text/html" title="스프링 부트 문서 번역 (Spring Boot Reference Documentation)" /><published>2019-10-29T20:48:00+00:00</published><updated>2019-10-29T20:48:00+00:00</updated><id>https://disj11.github.io/spring-boot-reference-docs</id><content type="html" xml:base="https://disj11.github.io/spring-boot-reference-docs">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
 &lt;p&gt;영어 공부를 위하여 &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/2.2.0.RELEASE/reference/html/index.html&quot;&gt;Spring Boot Reference Documentation&lt;/a&gt;
-를 번역한 프로젝트입니다. 차근차근 진행할 예정입니다.&lt;/p&gt;
+를 번역하는 프로젝트입니다.&lt;/p&gt;
 
 &lt;p&gt;오역이 있을 수 있으니 참고만 해주세요.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/disj11/spring-boot-reference&quot;&gt;스프링 부트 문서 번역본 Github Repo&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;The reference documentation consists of the following sections:&lt;br /&gt;
-이 문서는 다음과 같은 섹션으로 구성되어 있습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Legal&lt;/strong&gt;&lt;br /&gt;
-Legal information.&lt;br /&gt;
-법률 정보&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Documentation Overview&lt;/strong&gt;&lt;br /&gt;
-About the Documentation, Getting Help, First Steps, and more.&lt;br /&gt;
-설명서, 도움말, 첫 단계 등에 대한 정보&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/disj11/spring-boot-reference/blob/master/Getting_Stated.md&quot;&gt;Getting Started&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-Introducing Spring Boot, System Requirements, Servlet Containers, Installing Spring Boot, Developing Your First Spring Boot Application&lt;br /&gt;
-스프링 부트 소개, 시스템 요구사항, 서블릿 컨테이너, 스프링 부트 설치, 첫번째 스프링 부트 어플리케이션 개발&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/disj11/spring-boot-reference/blob/master/Using_Spring_Boot.md&quot;&gt;Using Spring Boot&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-Build Systems, Structuring Your Code, Configuration, Spring Beans and Dependency Injection, and more.&lt;br /&gt;
-빌드 시스템, 코드 구조, 구성, 스프링 Beans, 의존성 주입 등&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Spring Boot Features&lt;/strong&gt;&lt;br /&gt;
-Profiles, Logging, Security, Caching, Spring Integration, Testing, and more.&lt;br /&gt;
-프로파일, 로깅, 보안, 캐싱, 스프링 통합, 테스팅 등&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Spring Boot Actuator&lt;/strong&gt;&lt;br /&gt;
-Monitoring, Metrics, Auditing, and more.&lt;br /&gt;
-모니터링, Metrics, Auditing 등&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Deploying Spring Boot Applications&lt;/strong&gt;&lt;br /&gt;
-Deploying to the Cloud, Installing as a Unix application.&lt;br /&gt;
-클라우드로 배포, 유닉스 어플리케이션으로 설치&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Spring Boot CLI&lt;/strong&gt;&lt;br /&gt;
-Installing the CLI, Using the CLI, Configuring the CLI, and more.&lt;br /&gt;
-CLI 설치, CLI 사용, CLI 구성 등&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Build Tool Plugins&lt;/strong&gt;&lt;br /&gt;
-Maven Plugin, Gradle Plugin, Antlib, and more.&lt;br /&gt;
-Maven 플러그인, Gradle 플러그인, Antlib 등&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“How-to” Guides&lt;/strong&gt;&lt;br /&gt;
-Application Development, Configuration, Embedded Servers, Data Access, and many more.&lt;br /&gt;
-어플리케이션 배포, 구성, 내장 서버, 데이터 접근 등&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;The reference documentation has the following appendices:&lt;br /&gt;
-이 문서에는 다음과 같은 부록이 있습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Application Properties&lt;/strong&gt;&lt;br /&gt;
-Common application properties that can be used to configure your application.&lt;br /&gt;
-어플리케이션을 구성하는데 사용할 수 있는 공통 속성&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Configuration Metadata&lt;/strong&gt;&lt;br /&gt;
-Metadata used to describe configuration properties.&lt;br /&gt;
-구성 속성을 설명하는데 사용하는 메타데이터&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Auto-configuration Classes&lt;/strong&gt;&lt;br /&gt;
-Auto-configuration classes provided by Spring Boot.&lt;br /&gt;
-스프링 부트에서 제공하는 Auto-configuration classes&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Test Auto-configuration Annotations&lt;/strong&gt;&lt;br /&gt;
-Test-autoconfiguration annotations used to test slices of your application.&lt;br /&gt;
-단위 테스트를 위해 사용하는 Test-autoconfiguration 어노테이션&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Executable Jars&lt;/strong&gt;&lt;br /&gt;
-Spring Boot’s executable jars, their launchers, and their format.&lt;br /&gt;
-스프링 부트의 실행가능한 jar, launchers, 포맷&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Dependency Versions&lt;/strong&gt;&lt;br /&gt;
-Details of the dependencies that are managed by Spring Boot.&lt;br /&gt;
-스트링 부트가 관리하는 의존성의 세부 정보&lt;/p&gt;</content><author><name>Saturday</name></author><category term="Toy Project" /><summary type="html">소개 영어 공부를 위하여 Spring Boot Reference Documentation 를 번역한 프로젝트입니다. 차근차근 진행할 예정입니다.</summary></entry><entry><title type="html">애니메이션 정보 확인 사이트 V2 (Toy Project)</title><link href="https://disj11.github.io/anilist-v2" rel="alternate" type="text/html" title="애니메이션 정보 확인 사이트 V2 (Toy Project)" /><published>2019-10-04T18:40:00+00:00</published><updated>2019-10-04T18:40:00+00:00</updated><id>https://disj11.github.io/anilist-v2</id><content type="html" xml:base="https://disj11.github.io/anilist-v2">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/disj11/study/tree/master/spring-boot-reference&quot;&gt;스프링 부트 문서 번역본&lt;/a&gt;&lt;/p&gt;</content><author><name>Saturday</name></author><category term="Toy Project" /><summary type="html">소개 영어 공부를 위하여 Spring Boot Reference Documentation 를 번역하는 프로젝트입니다.</summary></entry><entry><title type="html">애니메이션 정보 확인 사이트 V2 (Toy Project)</title><link href="https://disj11.github.io/anilist-v2" rel="alternate" type="text/html" title="애니메이션 정보 확인 사이트 V2 (Toy Project)" /><published>2019-10-04T18:40:00+00:00</published><updated>2019-10-04T18:40:00+00:00</updated><id>https://disj11.github.io/anilist-v2</id><content type="html" xml:base="https://disj11.github.io/anilist-v2">&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
 &lt;p&gt;연습삼아 만들어 본 애니메이션 정보 확인 사이트&lt;/p&gt;
 
 &lt;h3 id=&quot;사용-기술&quot;&gt;사용 기술&lt;/h3&gt;

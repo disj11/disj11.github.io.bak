@@ -116,7 +116,7 @@ isolation level(격리 수준)이 낮을수록 많은 사용자가 동일한 데
         
           <description>&lt;h3 id=&quot;소개&quot;&gt;소개&lt;/h3&gt;
 &lt;p&gt;영어 공부를 위하여 &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/2.2.0.RELEASE/reference/html/index.html&quot;&gt;Spring Boot Reference Documentation&lt;/a&gt;
-를 번역한 프로젝트입니다. 차근차근 진행할 예정입니다.&lt;/p&gt;
+를 번역하는 프로젝트입니다.&lt;/p&gt;
 
 </description>
         
